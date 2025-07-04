@@ -1,26 +1,39 @@
 A collection of academic research projects in economics and finance, developed between 2024-2025. This repository is designed for complete reproducibility - all code, data, and documentation are included.
 
-## Projects Overview
+##  Projects Overview
 
 ### Dynamic Allocation & Portfolio VaR (2025)
 
-Portfolio optimization and risk management using dynamic allocation strategies and Value-at-Risk calculations.
+> **Focus**: Portfolio optimization and risk management using dynamic allocation strategies and Value-at-Risk calculations.  
+> **Keywords**: Risk Management • Portfolio Theory • VaR • Dynamic Allocation
+
+---
 
 ### Asset Allocation with Carbon Objective (2025)
 
-Integration of environmental objectives into portfolio optimization frameworks using carbon emission constraints.
+> **Focus**: Integration of environmental objectives into portfolio optimization frameworks using carbon emission constraints.  
+> **Keywords**: ESG Investment • Carbon Finance • Sustainable Portfolio • Environmental Economics
 
-### Cointegration and Pair Trading (2025)
+---
 
-Statistical arbitrage strategies based on cointegration analysis and pairs trading methodologies.
+###  Cointegration and Pair Trading (2025)
 
-### Carbon Tax Impact Analysis - Switzerland (2024)
+> **Focus**: Statistical arbitrage strategies based on cointegration analysis and pairs trading methodologies.  
+> **Keywords**: Cointegration • Pairs Trading • Statistical Arbitrage • Time Series Analysis
 
-Empirical assessment of the 2008 Swiss carbon tax implementation on national emission levels.
+---
 
-### Tax Policy and Innovation - Ireland (2025)
+###  Carbon Tax Impact Analysis - Switzerland (2024)
 
-Causal analysis of Ireland's Finance Act 2015 impact on corporate innovation using difference-in-differences and synthetic control methods.
+> **Focus**: Empirical assessment of the 2008 Swiss carbon tax implementation on national emission levels.  
+> **Keywords**: Carbon Tax • Policy Evaluation • Environmental Policy • Causal Inference
+
+---
+
+###  Tax Policy and Innovation - Ireland (2025)
+
+> **Focus**: Causal analysis of Ireland's Finance Act 2015 impact on corporate innovation using difference-in-differences and synthetic control methods.  
+> **Keywords**: Innovation Economics • Tax Policy • Difference-in-Differences • Synthetic Control
 
 ## Technical Stack
 
@@ -57,6 +70,3 @@ This repository follows best practices for reproducible research:
 - Each project includes detailed methodology
 - Results can be reproduced without external data dependencies
 
----
-
-*Academic research portfolio - All projects completed as part of advanced studies in economics and finance.*
