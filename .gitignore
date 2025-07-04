@@ -1,0 +1,85 @@
+# Fichiers système
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python - fichiers temporaires uniquement
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# R - fichiers temporaires uniquement
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.Rproj
+.Rproj.user/
+
+# Stata - fichiers de log uniquement (on garde les .dta)
+*.log
+*.dta~
+*.stlog
+*.smcl
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# LaTeX auxiliary files (on garde les PDF finaux)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.vrb
+
+# Note: Les données (.xlsx, .csv, .pkl) et les articles (.pdf) sont volontairement inclus
+# pour permettre la reproductibilité complète des recherches
+
+# Dossier volumineux exclu
+Tax Cuts and Innovation: Unpacking Ireland's Finance Act 2015 (2025)/Codes/final_files/initial_cleaning/
