@@ -8,7 +8,7 @@
 
 ## Abstract
 
-<div align="center">
+<div align="left">
 
 | |
 |---|
@@ -24,7 +24,7 @@ Cointegration • Pair Trading • Stationarity • Unit Root Testing (Dickey-Fu
 
 ---
 
-<div align="center">
+<div align="left">
 
 ### Authors
 

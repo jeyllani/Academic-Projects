@@ -8,7 +8,7 @@
 
 ## Abstract
 
-<div align="center">
+<div align="left">
 
 
 Cette étude examine l'impact de l'introduction de la taxe sur le CO₂ en 2008 en Suisse sur les émissions de gaz à effet de serre. En utilisant une approche de différence en différences (DiD), nous comparons la Suisse avec l'Autriche pour identifier les changements significatifs des émissions de CO₂ par habitant après la mise en œuvre de la politique. 
@@ -26,7 +26,7 @@ Taxe sur le carbone • Émissions de gaz à effet de serre • Différence en d
 
 ---
 
-<div align="center">
+<div align="left">
 
 ### Auteurs
 

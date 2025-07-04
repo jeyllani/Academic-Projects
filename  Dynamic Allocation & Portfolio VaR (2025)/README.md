@@ -9,7 +9,7 @@
 
 ## Abstract
 
-<div align="center">
+<div align="left">
 <div style="text-align: justify; max-width: 700px; margin: 0 auto; padding: 10px;">
 
 This paper develops and empirically evaluates static and dynamic mean-variance portfolio allocations for a two-asset universe (FTSE 100 equities and UK 10-year gilts) under risk aversion parameters (λ=2) and (λ=10). First, we derive closed-form optimal static weights and document their leverage effects. Second, we estimate an AR(1)-GARCH(1,1) model on weekly returns to generate conditional volatility forecasts, which feed into a weekly re-optimization of portfolio weights subject to position limits [-1,+1.5].
@@ -29,7 +29,7 @@ Dynamic asset allocation • Mean-variance optimization • AR(1)-GARCH(1,1) •
 
 ---
 
-<div align="center">
+<div align="left">
 
 ### Auteurs
 

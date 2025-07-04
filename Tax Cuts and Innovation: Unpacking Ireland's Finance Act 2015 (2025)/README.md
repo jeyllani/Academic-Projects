@@ -8,7 +8,7 @@
 
 ## Abstract
 
-<div align="center">
+<div align="left">
 <div style="text-align: justify; max-width: 700px; margin: 0 auto; padding: 10px;">
 
 In 2016, Ireland introduced the Knowledge Development Box (KDB) through the Finance Act 2015, reducing the tax rate on income derived from intellectual property (IP) from 12.5% to 6.25% to foster innovation. This study examines the impact of the KDB on the number of patents filed and on the growth rate of the depreciation of IP assets by Irish firms. Using advanced econometric methodologies, including static and dynamic Difference-in-Differences (DiD) models as well as the Synthetic Control Method (SCM), we assessed the effect of this tax reform.
@@ -28,7 +28,7 @@ Knowledge Development Box • Intellectual property • Tax reform • Innovatio
 
 ---
 
-<div align="center">
+<div align="left">
 
 ### Authors
 

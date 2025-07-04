@@ -8,7 +8,7 @@
 
 ## Abstract
 
-<div align="center">
+<div align="left">
 <div style="text-align: justify; max-width: 700px; margin: 0 auto; padding: 10px;">
 
 Can deep portfolio decarbonisation be achieved without eroding financial performance? Using monthly returns and annual CO₂ data for more than 600 North-American equities (2014-2024), we extend mean-variance optimisation into a three-dimensional (μ, σ, carbon) space and evaluate five allocations: (i) an unconstrained minimum-variance portfolio; (ii) a value-weighted benchmark; (iii) a minimum-variance design capped at 50% of its own footprint; (iv) a benchmark-neutral strategy that halves the benchmark footprint subject to a tracking-error budget; and (v) a dynamic Net-Zero portfolio imposing a 10% yearly emissions decline.
@@ -28,7 +28,7 @@ Portfolio Optimization • Carbon Constraints • Climate Finance • Tracking E
 
 ---
 
-<div align="center">
+<div align="left">
 
 ### Authors
 
