@@ -1,5 +1,3 @@
-A collection of academic research projects in economics and finance, developed between 2024-2025. This repository is designed for complete reproducibility - all code, data, and documentation are included.
-
 ##  Projects Overview
 
 ### Dynamic Allocation & Portfolio VaR (2025)
