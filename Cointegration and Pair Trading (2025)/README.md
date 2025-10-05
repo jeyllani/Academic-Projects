@@ -28,8 +28,7 @@ Cointegration • Pair Trading • Stationarity • Unit Root Testing (Dickey-Fu
 
 ### Authors
 
-**Abdul Kadir Jeylani Bakari** *(Main Author)*  
-Arnaud Küffer • Julien Marti • Yannick Travasa
+Abdul Kadir Jeylani Bakari • Arnaud Küffer • Julien Marti • Yannick Travasa
 
 *HEC Lausanne, Université de Lausanne*
 

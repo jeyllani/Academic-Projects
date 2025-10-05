@@ -32,8 +32,7 @@ Portfolio Optimization • Carbon Constraints • Climate Finance • Tracking E
 
 ### Authors
 
-**Abdul Kadir Jeylani Bakari** *(Main Author)*  
-Arnaud Küffer • Jules Curti • Tenzin-Minu Zimmer • Yannick Travasa
+Abdul Kadir Jeylani Bakari • Arnaud Küffer • Jules Curti • Tenzin-Minu Zimmer • Yannick Travasa
 
 *HEC Lausanne, Université de Lausanne*
 

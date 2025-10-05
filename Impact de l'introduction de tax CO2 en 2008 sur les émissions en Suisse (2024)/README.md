@@ -30,8 +30,7 @@ Taxe sur le carbone • Émissions de gaz à effet de serre • Différence en d
 
 ### Auteurs
 
-**Abdul Kadir Jeylani Bakari** *(Main Author)*  
-Felix Glemser • Karim Belghmi • Kyle Fletcher • Stella Marinelli
+Abdul Kadir Jeylani Bakari • Felix Glemser • Karim Belghmi • Kyle Fletcher • Stella Marinelli
 
 *HEC Lausanne, Université de Lausanne*
 

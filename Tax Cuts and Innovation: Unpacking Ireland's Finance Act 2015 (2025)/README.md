@@ -32,8 +32,7 @@ Knowledge Development Box • Intellectual property • Tax reform • Innovatio
 
 ### Authors
 
-**Abdul Kadir Jeylani Bakari** *(Main Author)*  
-Arnaud Küffer • Tenzin-Minu Zimmer • Yannick Travasa
+Abdul Kadir Jeylani Bakari • Arnaud Küffer • Tenzin-Minu Zimmer • Yannick Travasa
 
 *HEC Lausanne, Université de Lausanne*
 

@@ -33,8 +33,7 @@ Dynamic asset allocation • Mean-variance optimization • AR(1)-GARCH(1,1) •
 
 ### Auteurs
 
-**Abdul Kadir Jeylani Bakari** *(Main Author)*  
-Arnaud Küffer • Julien Marti • Yannick Travasa
+Abdul Kadir Jeylani Bakari • Arnaud Küffer • Julien Marti • Yannick Travasa
 
 *HEC Lausanne, Université de Lausanne*
 
