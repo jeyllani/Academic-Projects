@@ -33,6 +33,16 @@
 > **Focus**: Causal analysis of Ireland's Finance Act 2015 impact on corporate innovation using difference-in-differences and synthetic control methods.  
 > **Keywords**: Innovation Economics • Tax Policy • Difference-in-Differences • Synthetic Control
 
+
+---
+
+### Quantitative Macroeconomics — DSGE & Expectations (2023)
+
+> **Focus**: Dynamic Stochastic General Equilibrium (DSGE) modeling, stochastic simulation of economic crises, and analysis of agents' expectation formation. 
+
+> **Keywords**: DSGE Modeling • Quantitative Macro • Impulse Response Functions (IRFs) • Markov Chains
+
+
 ## Technical Stack
 
 - **Python**: Data analysis, financial modeling, machine learning
