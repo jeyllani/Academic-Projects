@@ -42,6 +42,7 @@
 
 > **Keywords**: DSGE Modeling • Quantitative Macro • Impulse Response Functions (IRFs) • Markov Chains
 
+---
 
 ## Technical Stack
 
