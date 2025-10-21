@@ -1,8 +1,8 @@
 # Quantitative Macroeconomics — DSGE & Expectations
 
-<div align="center">
-<em>Autumn 2023</em>
-</div>
+<p align="center">
+  <em>Autumn 2023</em>
+</p>
 
 ---
 
