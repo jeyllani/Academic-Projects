@@ -10,9 +10,8 @@
 
 <div align="left">
 
-| |
-|---|
-| This project implements a comprehensive quantitative macroeconomic analysis combining Dynamic Stochastic General Equilibrium (DSGE) modeling with expectation formation under uncertainty. In the first part, we develop a Real Business Cycle DSGE model solved through first-order linearization around the deterministic steady state. After deriving household and firm optimality conditions and computing the steady state, we analyze impulse response functions. A positive technology shock raises the real wage proportionally with productivity gains, while a negative preference (labor-leisure) shock lowers the real wage through increased labor supply. In the second part, we study expectation formation under rare, stochastic crises modeled as a two-state Markov chain. Expectations are updated with a simple adaptive learning rule parameterized by λ, and forecasting performance is evaluated using root-mean-squared error (RMSE). Across simulations, the lowest RMSE occurs at λ = 0.25, indicating an optimal balance between responsiveness and stability in expectation updating. The work emphasizes clean numerical implementation, stochastic simulation techniques, and careful interpretation of dynamic propagation mechanisms in modern macroeconomic models. |
+
+This project implements a comprehensive quantitative macroeconomic analysis combining Dynamic Stochastic General Equilibrium (DSGE) modeling with expectation formation under uncertainty. In the first part, we develop a Real Business Cycle DSGE model solved through first-order linearization around the deterministic steady state. After deriving household and firm optimality conditions and computing the steady state, we analyze impulse response functions. A positive technology shock raises the real wage proportionally with productivity gains, while a negative preference (labor-leisure) shock lowers the real wage through increased labor supply. In the second part, we study expectation formation under rare, stochastic crises modeled as a two-state Markov chain. Expectations are updated with a simple adaptive learning rule parameterized by λ, and forecasting performance is evaluated using root-mean-squared error (RMSE). Across simulations, the lowest RMSE occurs at λ = 0.25, indicating an optimal balance between responsiveness and stability in expectation updating. The work emphasizes clean numerical implementation, stochastic simulation techniques, and careful interpretation of dynamic propagation mechanisms in modern macroeconomic models. |
 
 </div>
 
@@ -50,6 +49,7 @@ Quantitative Macroeconomics (2023)/
 │   └── Q2_2.pdf       # IRF: Preference shock
 ├── report/
 │   └── Answers.pdf    # Derivations, steady state, FOCs
+├── problem_set.pdf    # Original problem set and questions
 └── README.md
 ```
 
