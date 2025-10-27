@@ -39,10 +39,8 @@
 ### Quantitative Macroeconomics — DSGE & Expectations (2023)
 
 > **Focus**: Dynamic Stochastic General Equilibrium (DSGE) modeling, stochastic simulation of economic crises, and analysis of agents' expectation formation. 
-
 > **Keywords**: DSGE Modeling • Quantitative Macro • Impulse Response Functions (IRFs) • Markov Chains
 
----
 
 ## Technical Stack
 
