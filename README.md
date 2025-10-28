@@ -66,8 +66,6 @@ Each project directory contains:
 - Project-specific documentation
 - Reproduction instructions 
 
-**Note**: All data files and research papers are included in this repository to ensure complete reproducibility of results.
-
 ## Usage
 
 ```bash
