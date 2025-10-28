@@ -72,7 +72,7 @@ Each project directory contains:
 git clone https://github.com/jeyllani/Projects.git && cd "Projects/[Project Name]"
 ```
 
-Paper (PDF) and executable code are provided to reproduce results.
+Paper (PDF) and executable code are provided to reproduce results
 
 ## Reproducibility
 
