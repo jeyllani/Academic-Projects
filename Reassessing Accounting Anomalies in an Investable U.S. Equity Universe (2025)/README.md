@@ -1,4 +1,4 @@
-# Reassessing Accounting Anomalies in an Investable U.S. Equity Universe
+# Reassessing Accounting Anomalies in an Investable U.S. Equity Universe (Under Revision)
 
 <p align="center">
   <em>26 November 2025</em>
