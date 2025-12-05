@@ -6,6 +6,7 @@
 
 #### Reassessing Accounting Anomalies in an Investable U.S. Equity Universe (2025)
 
+#### (Under Revision)
 > **Focus**: Re-examination of 25 accounting-based signals in U.S. equities (1963–2024) using value-weighted portfolios, Fama-French six-factor model, and multiple testing adjustments.  
 > **Keywords**: Accounting Anomalies • Fundamental Signals • Multiple Testing • Alpha Generation • Fama-French Factors
 
