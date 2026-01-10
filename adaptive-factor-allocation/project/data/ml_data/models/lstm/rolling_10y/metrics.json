@@ -1,0 +1,63 @@
+{
+  "model": "LSTM",
+  "strategy": "rolling_10y",
+  "architecture": {
+    "layers": "LSTM(32) + Dropout(0.2) + Dense(1, sigmoid)",
+    "optimizer": "Adam(lr=0.001)",
+    "loss": "binary_crossentropy",
+    "epochs": 30,
+    "batch_size": 32,
+    "early_stopping": "patience=3"
+  },
+  "validation": {
+    "type": "walk_forward",
+    "rebalancing": "annual",
+    "first_test": "1980-06-30",
+    "last_test": "2023-06-30",
+    "n_formations": 44
+  },
+  "train_window": {
+    "type": "rolling",
+    "size": "120 months",
+    "min_samples": 120,
+    "max_samples": 120,
+    "mean_samples": 120.0
+  },
+  "performance": {
+    "overall": {
+      "accuracy": 0.7272727272727273,
+      "precision": 0.625,
+      "recall": 0.625,
+      "f1": 0.625,
+      "roc_auc": 0.7075892857142857
+    },
+    "extended": {
+      "balanced_accuracy": 0.7053571428571428,
+      "auc": 0.7075892857142857,
+      "f1_macro": 0.7053571428571428,
+      "brier_score": 0.2116262588703571,
+      "log_loss": 0.6492170556054907,
+      "n_obs": 44
+    },
+    "by_regime": {
+      "regime_0": {
+        "count": 28,
+        "accuracy": 0.7857142857142857
+      },
+      "regime_1": {
+        "count": 16,
+        "accuracy": 0.625
+      }
+    }
+  },
+  "temporal_stability": {
+    "early_period": {
+      "years": "\u22641990",
+      "accuracy": 0.7272727272727273
+    },
+    "late_period": {
+      "years": "\u22652000",
+      "accuracy": 0.6666666666666666
+    }
+  }
+}

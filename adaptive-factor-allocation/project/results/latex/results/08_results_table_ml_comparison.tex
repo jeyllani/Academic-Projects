@@ -1,0 +1,23 @@
+
+\begin{table}[htbp]
+\centering
+\caption{Machine Learning Models: Regime Classification Performance (1980--2023)}
+\label{tab:ml_comparison}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\toprule
+Model & Accuracy & Precision & Recall & F1-Score & ROC-AUC & Bal. Acc. & F1 Macro & Brier & Log Loss \\
+\midrule
+Logistic & \textbf{0.7273} & 0.6667 & 0.5000 & 0.5714 & \textbf{0.8393} & 0.6786 & 0.6857 & 0.1721 & 0.5192 \\
+Random Forest & 0.7045 & 0.6667 & 0.3750 & 0.4800 & 0.7165 & 0.6339 & 0.6368 & 0.1967 & 0.5754 \\
+XGBoost & 0.6591 & 0.5385 & 0.4375 & 0.4828 & 0.7321 & 0.6116 & 0.6143 & 0.2256 & 0.7140 \\
+LSTM (Exp.) & 0.7273 & \textbf{0.7000} & 0.4375 & 0.5385 & 0.8192 & 0.6652 & 0.6725 & \textbf{0.1679} & \textbf{0.5006} \\
+LSTM (Roll.) & 0.7273 & 0.6250 & \textbf{0.6250} & \textbf{0.6250} & 0.7076 & \textbf{0.7054} & \textbf{0.7054} & 0.2116 & 0.6492 \\
+\midrule
+\bottomrule
+\end{tabular}%
+}
+\caption*{\footnotesize \textbf{Note:} Bold values indicate best performance per metric. Overall winner: \textbf{LSTM (Roll.)} (4/9 metrics). Walk-forward validation with annual rebalancing (June). 
+Lower is better for Brier Score and Log Loss; higher is better for all other metrics. 
+Training period: 1969--1979 (initial), testing: 1980--2023 (44 formations).}
+\end{table}

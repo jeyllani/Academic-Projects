@@ -1,0 +1,47 @@
+\begin{table}[htbp]
+\centering
+\caption{Subperiod Incremental Alpha: Full Set of ML Strategies vs.\ 50/50 Benchmark (FF6, Q5, FF7, Net Returns)}
+\label{tab:subperiod_fullgrid_all}
+\footnotesize
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l *{24}{r l}}
+\toprule
+\textbf{Basket} & \textbf{Model} & \multicolumn{8}{c}{\textbf{P1 (1980--1999)}} & \multicolumn{8}{c}{\textbf{P2 (2000--2009)}} & \multicolumn{8}{c}{\textbf{P3 (2010--2024)}} \\
+\cmidrule(lr){3-10}\cmidrule(lr){11-18}\cmidrule(lr){19-26}
+ & & FF5 & & FF6 & & FF7 & & Q5 & & FF5 & & FF6 & & FF7 & & Q5 & & FF5 & & FF6 & & FF7 & & Q5 & \\
+\midrule
+Economic & Logistic & 0.42 &     & 0.43 &     & 0.29 &     & 0.76 &     & -0.26 &     & -0.26 &     & -0.31 &     & -0.55 &     & -0.40 &     & -0.44 &     & -0.50 &     & -0.47 &     & \\
+ & RF & -0.30 &     & 0.04 &     & 0.02 &     & 0.57 &     & -1.43 & **  & -1.42 & **  & -1.46 & *** & -0.68 &     & -0.02 &     & -0.03 &     & -0.04 &     & 0.09 &     & \\
+ & XGB & 0.36 &     & 0.63 &     & 0.51 &     & 0.77 &     & -0.36 &     & -0.35 &     & -0.42 &     & 0.26 &     & -0.30 &     & -0.31 &     & -0.26 &     & -0.26 &     & \\
+ & LSTM-Exp & -0.28 &     & 0.01 &     & 0.01 &     & 0.51 &     & -0.15 &     & -0.15 &     & -0.25 &     & 0.04 &     & -0.16 &     & -0.19 &     & -0.29 &     & -0.21 &     & \\
+ & LSTM-Roll & -0.21 &     & -0.03 &     & -0.00 &     & 0.40 &     & -0.15 &     & -0.15 &     & -0.25 &     & 0.04 &     & -0.58 &     & -0.64 &     & -0.75 &     & -0.61 &     & \\
+\midrule
+Beta Exp. & Logistic & 0.02 &     & 0.84 &     & 0.60 &     & -0.19 &     & -1.53 &     & -1.53 &     & -1.56 &     & -1.47 &     & 0.52 &     & 0.59 &     & 0.49 &     & 0.51 &     & \\
+ & RF & 0.89 &     & 1.33 & *** & 1.51 & *** & 0.23 &     & 2.24 & **  & 2.23 & **  & 2.27 & **  & 1.04 &     & 0.31 &     & 0.40 &     & 0.29 &     & 0.15 &     & \\
+ & XGB & 0.69 &     & 1.10 & **  & 1.16 & **  & 0.16 &     & 2.36 & **  & 2.36 & **  & 2.46 & *** & 1.24 &     & -0.62 &     & -0.61 &     & -0.78 &     & -0.86 &     & \\
+ & LSTM-Exp & 0.66 & *   & 1.23 & *** & 1.44 & *** & 0.51 &     & -0.24 &     & -0.27 &     & -0.31 &     & -1.60 &     & 0.42 &     & 0.50 &     & 0.45 &     & 0.43 &     & \\
+ & LSTM-Roll & 1.00 & **  & 1.12 & *   & 1.35 & **  & 0.72 &     & -0.24 &     & -0.27 &     & -0.31 &     & -1.60 &     & 0.60 &     & 0.58 &     & 0.81 &     & 0.77 &     & \\
+\midrule
+Rolling $\beta$ & Logistic & -0.12 &     & 0.64 &     & 0.39 &     & -0.57 &     & -1.87 &     & -1.86 &     & -1.81 &     & -1.40 &     & 0.78 &     & 0.83 &     & 0.58 &     & 0.64 &     & \\
+ & RF & 0.90 &     & 1.18 & *   & 1.36 & *   & -0.30 &     & 3.57 & *** & 3.56 & *** & 3.65 & *** & 2.14 & **  & 0.67 &     & 0.82 &     & 0.53 &     & 0.51 &     & \\
+ & XGB & 1.12 & *   & 1.44 & **  & 1.49 & *   & 0.12 &     & 3.04 & **  & 3.06 & *** & 3.25 & *** & 1.83 & **  & -0.61 &     & -0.53 &     & -0.84 &     & -0.90 &     & \\
+ & LSTM-Exp & 0.83 &     & 1.25 & **  & 1.54 & **  & 0.39 &     & 0.13 &     & 0.10 &     & 0.21 &     & -1.53 &     & 0.67 &     & 0.73 &     & 0.46 &     & 0.54 &     & \\
+ & LSTM-Roll & 1.50 & **  & 1.73 & **  & 2.05 & *** & 1.14 &     & 0.13 &     & 0.10 &     & 0.21 &     & -1.53 &     & 0.27 &     & 0.33 &     & 0.26 &     & 0.27 &     & \\
+\midrule
+EWMA $\beta$ & Logistic & 0.04 &     & 0.59 &     & 0.35 &     & -0.61 &     & -1.86 &     & -1.83 &     & -1.76 &     & -0.95 &     & 0.46 &     & 0.54 &     & 0.18 &     & 0.21 &     & \\
+ & RF & 0.58 &     & 0.76 &     & 0.90 &     & -0.71 &     & 3.66 & *** & 3.65 & *** & 3.77 & *** & 1.94 & **  & 0.12 &     & 0.29 &     & -0.07 &     & -0.14 &     & \\
+ & XGB & 0.92 &     & 1.07 &     & 1.05 &     & -0.35 &     & 2.78 & **  & 2.79 & **  & 2.96 & *** & 1.33 &     & -1.13 &     & -1.01 &     & -1.39 & *   & -1.47 & *   & \\
+ & LSTM-Exp & 0.53 &     & 0.79 &     & 1.04 &     & -0.09 &     & 0.24 &     & 0.23 &     & 0.36 &     & -1.27 &     & 0.35 &     & 0.45 &     & 0.08 &     & 0.11 &     & \\
+ & LSTM-Roll & 1.16 & *   & 1.31 & *   & 1.59 & **  & 0.71 &     & 0.24 &     & 0.23 &     & 0.36 &     & -1.27 &     & -0.30 &     & -0.26 &     & -0.27 &     & -0.33 &     & \\
+\midrule
+Kalman $\beta$ & Logistic & -0.05 &     & 0.58 &     & 0.39 &     & -0.53 &     & -1.39 &     & -1.37 &     & -1.25 &     & -0.93 &     & 0.78 &     & 0.80 &     & 0.50 &     & 0.52 &     & \\
+ & RF & 0.70 &     & 0.98 &     & 1.06 &     & -0.65 &     & 3.58 & *** & 3.56 & *** & 3.60 & *** & 1.76 & **  & 0.55 &     & 0.68 &     & 0.34 &     & 0.27 &     & \\
+ & XGB & 1.11 & *   & 1.37 & **  & 1.28 &     & -0.20 &     & 2.82 & **  & 2.84 & *** & 2.95 & *** & 1.26 &     & -0.86 &     & -0.80 &     & -1.17 &     & -1.26 &     & \\
+ & LSTM-Exp & 0.83 &     & 1.25 & **  & 1.42 & **  & 0.24 &     & 0.28 &     & 0.26 &     & 0.39 &     & -1.26 &     & 0.71 &     & 0.74 &     & 0.43 &     & 0.48 &     & \\
+ & LSTM-Roll & 1.28 & **  & 1.36 & **  & 1.61 & **  & 0.80 &     & 0.28 &     & 0.26 &     & 0.39 &     & -1.26 &     & -0.08 &     & -0.07 &     & -0.06 &     & -0.12 &     & \\
+\bottomrule
+\end{tabular}%
+}
+\caption*{\footnotesize \textit{Notes:} This table reports subperiod incremental alphas for the full set of 25 ML regime-switching strategies (5 baskets $\times$ 5 models) relative to the 50/50 benchmark (50\% Buy\&Hold Offensive + 50\% Buy\&Hold Defensive). For each subperiod $P1$ (1980--1999), $P2$ (2000--2009), and $P3$ (2010--2024), $\Delta\alpha$ denotes the annualized abnormal return (in \% p.a.) obtained by regressing the return difference (ML minus benchmark) on the Fama--French five-factor (FF5), six-factor (FF6), and seven-factor (FF7) models, as well as the Hou--Xue--Zhang $q$-factor model (Q5). $t$-statistics are based on Newey--West HAC standard errors with 12 lags using monthly data. All strategy and benchmark returns are net of transaction costs. The set of strategies is fixed ex-ante (no re-optimization within subperiods). Sample: July 1980--June 2024. Significance: *** $p<0.01$, ** $p<0.05$, * $p<0.10$.}
+\end{table}

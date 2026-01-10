@@ -1,0 +1,47 @@
+\begin{table}[htbp]
+\centering
+\caption{Subperiod Robustness: All ML Strategies vs 50/50 Benchmark (FF6)}
+\label{tab:subperiod_all_ml}
+\small
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c r l c r l c r l}
+\toprule
+\textbf{Basket} & \textbf{Model} & \multicolumn{3}{c}{\textbf{P1: 1980--1999}} & \multicolumn{3}{c}{\textbf{P2: 2000--2009}} & \multicolumn{3}{c}{\textbf{P3: 2010--2024}} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-11}
+ & & Sharpe & $\Delta\alpha$ &  & Sharpe & $\Delta\alpha$ &  & Sharpe & $\Delta\alpha$ &  \\
+\midrule
+Economic & Logistic & 0.90 & 0.43 &     & 0.54 & -0.26 &     & 0.75 & -0.44 &     \\
+ & RF & 0.87 & 0.04 &     & 0.57 & -1.42 & ** & 0.74 & -0.03 &     \\
+ & XGB & 0.90 & 0.63 &     & 0.61 & -0.35 &     & 0.74 & -0.31 &     \\
+ & LSTM-Exp & 0.87 & 0.01 &     & 0.54 & -0.15 &     & 0.75 & -0.19 &     \\
+ & LSTM-Roll & 0.88 & -0.03 &     & 0.54 & -0.15 &     & 0.74 & -0.64 &     \\
+\midrule
+Beta Exp. & Logistic & 0.93 & 0.84 &     & 0.55 & -1.53 &     & 0.80 & 0.59 &     \\
+ & RF & 0.92 & 1.33 & *** & 0.61 & 2.23 & ** & 0.80 & 0.40 &     \\
+ & XGB & 0.92 & 1.10 & ** & 0.52 & 2.36 & ** & 0.77 & -0.61 &     \\
+ & LSTM-Exp & 0.91 & 1.23 & *** & 0.67 & -0.27 &     & 0.80 & 0.50 &     \\
+ & LSTM-Roll & 0.94 & 1.12 & * & 0.67 & -0.27 &     & 0.80 & 0.58 &     \\
+\midrule
+Rolling $\beta$ & Logistic & 0.92 & 0.64 &     & 0.57 & -1.86 &     & 0.78 & 0.83 &     \\
+ & RF & 0.89 & 1.18 & * & 0.65 & 3.56 & *** & 0.79 & 0.82 &     \\
+ & XGB & 0.90 & 1.44 & ** & 0.53 & 3.06 & *** & 0.74 & -0.53 &     \\
+ & LSTM-Exp & 0.88 & 1.25 & ** & 0.70 & 0.10 &     & 0.78 & 0.73 &     \\
+ & LSTM-Roll & 0.94 & 1.73 & ** & 0.70 & 0.10 &     & 0.77 & 0.33 &     \\
+\midrule
+EWMA $\beta$ & Logistic & 0.94 & 0.59 &     & 0.57 & -1.83 &     & 0.77 & 0.54 &     \\
+ & RF & 0.88 & 0.76 &     & 0.63 & 3.65 & *** & 0.77 & 0.29 &     \\
+ & XGB & 0.91 & 1.07 &     & 0.49 & 2.79 & ** & 0.73 & -1.01 &     \\
+ & LSTM-Exp & 0.88 & 0.79 &     & 0.71 & 0.23 &     & 0.77 & 0.45 &     \\
+ & LSTM-Roll & 0.93 & 1.31 & * & 0.71 & 0.23 &     & 0.75 & -0.26 &     \\
+\midrule
+Kalman $\beta$ & Logistic & 0.92 & 0.58 &     & 0.58 & -1.37 &     & 0.78 & 0.80 &     \\
+ & RF & 0.88 & 0.98 &     & 0.65 & 3.56 & *** & 0.78 & 0.68 &     \\
+ & XGB & 0.91 & 1.37 & ** & 0.52 & 2.84 & *** & 0.73 & -0.80 &     \\
+ & LSTM-Exp & 0.89 & 1.25 & ** & 0.70 & 0.26 &     & 0.78 & 0.74 &     \\
+ & LSTM-Roll & 0.93 & 1.36 & ** & 0.70 & 0.26 &     & 0.76 & -0.07 &     \\
+\bottomrule
+\end{tabular}%
+}
+\caption*{\footnotesize \textit{Notes:} This table reports subperiod performance metrics for all 25 ML strategies (5 baskets $\times$ 5 models) against the 50/50 benchmark (50\% Buy\&Hold Offensive + 50\% Defensive). Sharpe denotes the net Sharpe ratio of the ML strategy within each subperiod. $\Delta\alpha$ denotes the incremental alpha (in \% per annum) of the ML strategy relative to the 50/50 benchmark under the Fama--French 6-factor (FF6) model. Subperiods are: P1 (1980--1999), P2 (2000--2009), P3 (2010--2024). $t$-statistics use Newey--West HAC standard errors (12 lags) on monthly data. All returns are net of transaction costs. This table complements the main subperiod analysis (Table \ref{tab:subperiod_best_ml}) by showing robustness across all models. Sample: July 1980--June 2024. Significance: *** $p<0.01$, ** $p<0.05$, * $p<0.10$.}
+\end{table}

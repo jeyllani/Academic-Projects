@@ -1,0 +1,34 @@
+\begin{table}[htbp]
+\centering
+\caption{Portfolio Turnover by Basket Strategy (1980--2024)}
+\label{tab:turnover}
+\footnotesize
+\renewcommand{\arraystretch}{1.25}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l r r r r r r r r r r r r}
+\toprule
+& \multicolumn{3}{c}{\textbf{Panel A: Aggregate}} & \multicolumn{9}{c}{\textbf{Panel B: By Period}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-13}
+\textbf{Basket} & \textbf{Stock} & \textbf{Inter} & \textbf{Total} & \multicolumn{3}{c}{\textbf{1980--1999}} & \multicolumn{3}{c}{\textbf{2000--2009}} & \multicolumn{3}{c}{\textbf{2010--2024}} \\
+\cmidrule(lr){5-7} \cmidrule(lr){8-10} \cmidrule(lr){11-13}
+\textbf{Strategy} & \textbf{(\%)} & \textbf{(\%)} & \textbf{(\%)} & \textbf{Stock} & \textbf{Inter} & \textbf{Total} & \textbf{Stock} & \textbf{Inter} & \textbf{Total} & \textbf{Stock} & \textbf{Inter} & \textbf{Total} \\
+\midrule
+Economic Basket & 100.9 & 0.0 & 100.9 & 116.7 & 0.0 & 116.7 & 106.3 & 0.0 & 106.3 & 77.3 & 0.0 & 77.3 \\
+Beta Expansion & 115.9 & 0.0 & 115.9 & 138.1 & 0.0 & 138.1 & 117.3 & 0.0 & 117.3 & 86.8 & 0.0 & 86.8 \\
+Rolling Beta & 124.1 & 2.5 & 126.6 & 137.2 & 1.3 & 138.5 & 143.2 & 4.0 & 147.2 & 94.7 & 3.2 & 97.9 \\
+EWMA Beta & 120.9 & 5.3 & 126.2 & 131.4 & 5.9 & 137.3 & 137.7 & 4.8 & 142.5 & 96.6 & 4.8 & 101.4 \\
+Kalman Filter Beta & 120.9 & 3.3 & 124.2 & 133.1 & 2.1 & 135.2 & 138.8 & 3.2 & 142.0 & 93.6 & 4.8 & 98.4 \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{\textwidth}
+\vspace{0.2cm}
+\footnotesize
+\textit{Note:} This table reports portfolio turnover for different basket strategies from 1980 to 2024.
+Panel A shows the aggregate (time-averaged) turnover, while Panel B breaks down turnover by three periods:
+1980--1999, 2000--2009, and 2010--2024. Turnover is measured as the annual percentage of the portfolio that
+is rebalanced. ``Stock'' refers to stock-level turnover from annual June rebalancing (Fama-French convention).
+``Inter'' refers to inter-basket turnover from switches between Offensive/Defensive or High Beta/Low Beta strategies.
+All values are in percentage points (\%).
+\end{minipage}
+\end{table}

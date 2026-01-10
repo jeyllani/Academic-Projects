@@ -1,0 +1,56 @@
+\begin{table}[htbp]
+\centering
+\caption{Signal Definitions and Data Sources}
+\label{tab:signal_definitions}
+
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l l c l}
+\toprule
+\textbf{Category} & \textbf{Signal Name} & \textbf{Formula} & \textbf{Zoo ID} & \textbf{Reference} \\
+\midrule
+\multicolumn{5}{l}{\textit{Panel A: Profitability}} \\
+ & Gross Profitability & $\frac{\text{SALE} - \text{COGS}}{\text{AT}}$ & #88 & Novy-Marx (2013) \\
+ & Operating Profitability & $\frac{\text{REVT} - \text{COGS} - \text{XSGA}}{\text{AT}}$ & #95 & Fama \& French (2015) \\
+ & Return on Assets & $\frac{\text{NI}}{\text{AT}}$ & #82 & Balakrishnan et al. (2010) \\
+ & $\Delta$ Asset Turnover & $\Delta \left( \frac{\text{SALE}}{\text{AT}} \right)$ & #72 & Soliman (2008) \\
+ & $\Delta$ Profit Margin & $\Delta \left( \frac{\text{NI}}{\text{SALE}} \right)$ & #74 & Soliman (2008) \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel B: Investment}} \\
+ & Return on Invested Capital & $\frac{\text{NI} - \text{DVC}}{\text{CEQ} + \text{DLTT}}$ & #70 & Brown \& Rowe (2007) \\
+ & Asset Growth & $\frac{\Delta \text{AT}}{\text{AT}_{t-1}}$ & #92 & Cooper et al. (2008) \\
+ & Investment (CapEx) & $\frac{\text{CAPX}}{\text{AT}}$ & #53 & Titman et al. (2004) \\
+ & CapEx + Inventory Growth & $\frac{\Delta \text{PPEGT} + \Delta \text{INVT}}{\text{AT}}$ & #81 & Chen \& Zhang (2010) \\
+ & Net Share Issuance & $\frac{\Delta \text{CSHO}}{\text{CSHO}_{t-1}}$ & #73 & Pontiff \& Woodgate (2008) \\
+ & CapEx Growth & $\frac{\Delta \text{CAPX}}{\text{AT}}$ & #63 & Anderson \& Garcia-Feijóo (2006) \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel C: Accruals \& Quality}} \\
+ & Sales Growth & $\frac{\Delta \text{SALE}}{\text{SALE}_{t-1}}$ & #24 & Lakonishok et al. (1994) \\
+ & Working Capital Accruals & $\frac{\Delta \text{WC}}{\overline{\text{AT}}}$ & #28 & Sloan (1996) \\
+ & Sales-Receivables Gap & $\frac{\Delta \text{SALE} - \Delta \text{RECT}}{\text{AT}}$ & #34 & Abarbanell \& Bushee (1998) \\
+ & Receivables Turnover & $\frac{\text{SALE}}{\text{RECT}}$ & #17 & Ou \& Penman (1989) \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel D: Liquidity \& Solvency}} \\
+ & Operating Leverage & $\frac{\Delta \text{SALE} - \Delta \text{INVT}}{\text{AT}}$ & N/A & Abarbanell \& Bushee (1998) \\
+ & Cash Cushion & $\frac{\text{CHE}}{\text{AT}}$ & #86 & Palazzo (2012) \\
+ & Book Leverage & $\frac{\text{DLTT} + \text{DLC}}{\text{SEQ}}$ & #7 & Bhandari (1988) \\
+ & $\Delta$ Current Ratio & $\Delta \left( \frac{\text{ACT}}{\text{LCT}} \right)$ & #11 & Ou \& Penman (1989) \\
+ & Debt Capacity & $\frac{\text{RECT} + \text{INVT} + \text{PPENT}}{\text{AT}}$ & #71 & Almeida \& Campello (2007) \\
+\addlinespace
+\multicolumn{5}{l}{\textit{Panel E: Operating Efficiency}} \\
+ & Cash Productivity & $\frac{\text{SALE} + \Delta \text{RECT}}{\text{CHE}}$ & #76 & Chandrashekar \& Rao (2009) \\
+ & Depreciation/PP\&E & $\frac{\text{DP}}{\text{PPENT}}$ & #18 & Holthausen \& Larcker (1992) \\
+ & $\Delta$ Depreciation & $\frac{\Delta \text{DP}}{\text{AT}}$ & #19 & Holthausen \& Larcker (1992) \\
+ & Tax/Income Ratio & $\frac{\text{TXT}}{\text{PI}}$ & #56 & Lev \& Nissim (2004) \\
+ & Asset Turnover & $\frac{\text{SALE}}{\text{AT}}$ & N/A & Soliman (2008) \\
+\bottomrule
+\end{tabular}
+}% end resizebox
+
+\medskip
+
+\begin{minipage}{\textwidth}
+\footnotesize
+\textbf{Notes:} This table defines the 25 fundamental signals employed in this study. Signals are grouped into five economic categories following the asset pricing literature: Profitability, Investment, Accruals \& Quality, Liquidity \& Solvency, and Operating Efficiency. \textit{Formula} reports the mathematical definition using Compustat mnemonics (e.g., AT = Total Assets, SALE = Sales Revenue, NI = Net Income). \textit{Zoo ID} references the factor number in Feng, Giglio, and Xiu (2020), ``Taming the Factor Zoo,'' \textit{Journal of Finance}, 75(3), 1327--1370. ``N/A'' indicates signals constructed from existing variables without direct Zoo correspondence. \textit{Reference} cites the original academic paper introducing each signal. Variables are measured annually at fiscal year-end (June formation). See Appendix B for detailed Compustat variable definitions.
+\end{minipage}
+
+\end{table}

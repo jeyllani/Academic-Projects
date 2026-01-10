@@ -1,0 +1,31 @@
+name: afactors
+channels:
+  - apple
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  # Core Scientific Stack
+  - pandas>=2.0.0
+  - numpy>=1.24.0
+  - scipy>=1.10.0
+  - statsmodels>=0.14.0
+  # Visualization
+  - matplotlib>=3.7.0
+  - seaborn>=0.12.0
+  - plotly>=5.14.0
+  - altair>=5.0.0
+  # Machine Learning (CPU)
+  - scikit-learn>=1.2.0
+  - xgboost>=1.7.0
+  # Data I/O
+  - pyarrow>=12.0.0
+  - fastparquet>=2023.4.0
+  - openpyxl>=3.1.0
+  - tqdm>=4.65.0
+  - watchdog>=3.0.0
+  # Mac Optimization (TensorFlow Metal) & Pip-only packages
+  - pip:
+      - tensorflow-macos>=2.13.0
+      - tensorflow-metal>=1.0.0  # Metal backend for Mac GPU
+      - linearmodels>=5.0

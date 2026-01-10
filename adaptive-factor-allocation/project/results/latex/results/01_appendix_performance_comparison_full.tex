@@ -1,0 +1,121 @@
+\begin{landscape}
+\begin{table}[htbp]
+\centering
+\caption{Complete Performance Metrics: Gross vs. Net Returns (1980--2024)}
+\label{tab:appendix_performance_full}
+\scriptsize
+\renewcommand{\arraystretch}{1.25}
+
+% ═══════════════════════════════════════════════════════════════════════════
+% MINIPAGE LAYOUT: GROSS (Left) | NET (Right)
+% ═══════════════════════════════════════════════════════════════════════════
+
+\begin{minipage}[t]{0.47\linewidth}
+\centering
+\textbf{\normalsize Gross Returns (Signal Power)}
+\vspace{0.2cm}
+
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{l l r r r r r r}
+\toprule
+\textbf{Basket} & \textbf{Model} & \textbf{Ann.Ret.} & \textbf{CAGR} & \textbf{Sharpe} & \textbf{Sortino} & \textbf{Max DD} & \textbf{Date} \\
+ & & \textbf{(\%)} & \textbf{(\%)} & & & \textbf{(\%)} & \\
+\midrule
+\multicolumn{8}{l}{\textit{\textbf{Economic}}} \\
+ & XGB & 15.93 & 14.78 & 0.596 & 0.860 & -49.0 & 2009-02 \\
+ & RF & 15.56 & 14.35 & 0.577 & 0.841 & -49.0 & 2009-02 \\
+ & Logistic L2 & 15.49 & 14.29 & 0.575 & 0.834 & -49.0 & 2009-02 \\
+ & LSTM Rolling 10Y & 15.30 & 14.09 & 0.568 & 0.832 & -49.0 & 2009-02 \\
+ & LSTM Expanding & 15.32 & 14.10 & 0.566 & 0.827 & -49.0 & 2009-02 \\
+\addlinespace[0.15cm]
+\multicolumn{8}{l}{\textit{\textbf{Beta Exp.}}} \\
+ & LSTM Rolling 10Y & 16.85 & 15.88 & 0.649 & 0.933 & -47.5 & 2009-02 \\
+ & LSTM Expanding & 16.76 & 15.71 & 0.635 & 0.916 & -47.5 & 2009-02 \\
+ & RF & 16.65 & 15.57 & 0.627 & 0.916 & -47.5 & 2009-02 \\
+ & Logistic L2 & 16.39 & 15.29 & 0.617 & 0.885 & -47.5 & 2009-02 \\
+ & XGB & 16.05 & 14.84 & 0.591 & 0.877 & -47.5 & 2009-02 \\
+\addlinespace[0.15cm]
+\multicolumn{8}{l}{\textit{\textbf{Rolling $\beta$}}} \\
+ & LSTM Rolling 10Y & 16.71 & 15.75 & 0.646 & 0.931 & -44.8 & 2009-02 \\
+ & LSTM Expanding & 16.55 & 15.49 & 0.628 & 0.906 & -44.8 & 2009-02 \\
+ & RF & 16.57 & 15.44 & 0.617 & 0.908 & -44.8 & 2009-02 \\
+ & Logistic L2 & 16.20 & 15.08 & 0.609 & 0.875 & -44.8 & 2009-02 \\
+ & XGB & 15.87 & 14.61 & 0.578 & 0.864 & -44.8 & 2009-02 \\
+\addlinespace[0.15cm]
+\multicolumn{8}{l}{\textit{\textbf{EWMA $\beta$}}} \\
+ & LSTM Rolling 10Y & 16.55 & 15.57 & 0.638 & 0.913 & -45.8 & 2009-02 \\
+ & LSTM Expanding & 16.50 & 15.43 & 0.624 & 0.896 & -45.8 & 2009-02 \\
+ & Logistic L2 & 16.31 & 15.19 & 0.612 & 0.880 & -45.8 & 2009-02 \\
+ & RF & 16.35 & 15.17 & 0.604 & 0.876 & -45.8 & 2009-02 \\
+ & XGB & 15.67 & 14.36 & 0.566 & 0.840 & -45.8 & 2009-02 \\
+\addlinespace[0.15cm]
+\multicolumn{8}{l}{\textit{\textbf{Kalman $\beta$}}} \\
+ & LSTM Rolling 10Y & 16.58 & 15.60 & 0.639 & 0.918 & -44.9 & 2009-02 \\
+ & LSTM Expanding & 16.62 & 15.56 & 0.629 & 0.909 & -44.9 & 2009-02 \\
+ & RF & 16.50 & 15.35 & 0.613 & 0.897 & -44.9 & 2009-02 \\
+ & Logistic L2 & 16.26 & 15.13 & 0.609 & 0.878 & -44.9 & 2009-02 \\
+ & XGB & 15.81 & 14.54 & 0.575 & 0.858 & -44.9 & 2009-02 \\
+\addlinespace[0.15cm]
+\midrule
+\textit{NYSE P20} & \textit{Benchmark} & \textit{14.71} & \textit{13.95} & \textit{0.613} & \textit{0.846} & \textit{-48.4} & \textit{2009-02} \\
+\bottomrule
+\end{tabular}}
+\end{minipage}%
+\hspace{0.5cm}%
+\begin{minipage}[t]{0.47\linewidth}
+\centering
+\textbf{\normalsize Net Returns (Realizability)}
+\vspace{0.2cm}
+
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{l l r r r r r r}
+\toprule
+\textbf{Basket} & \textbf{Model} & \textbf{Ann.Ret.} & \textbf{CAGR} & \textbf{Sharpe} & \textbf{Sortino} & \textbf{Max DD} & \textbf{Date} \\
+ & & \textbf{(\%)} & \textbf{(\%)} & & & \textbf{(\%)} & \\
+\midrule
+\multicolumn{8}{l}{\textit{\textbf{Economic}}} \\
+ & XGB & 15.54 & 14.34 & 0.577 & 0.832 & -49.3 & 2009-02 \\
+ & RF & 15.17 & 13.91 & 0.557 & 0.812 & -49.3 & 2009-02 \\
+ & Logistic L2 & 15.10 & 13.85 & 0.555 & 0.806 & -49.3 & 2009-02 \\
+ & LSTM Rolling 10Y & 14.91 & 13.65 & 0.548 & 0.804 & -49.3 & 2009-02 \\
+ & LSTM Expanding & 14.93 & 13.65 & 0.547 & 0.798 & -49.3 & 2009-02 \\
+\addlinespace[0.15cm]
+\multicolumn{8}{l}{\textit{\textbf{Beta Exp.}}} \\
+ & LSTM Rolling 10Y & 16.47 & 15.45 & 0.631 & 0.906 & -47.8 & 2009-02 \\
+ & LSTM Expanding & 16.38 & 15.28 & 0.617 & 0.889 & -47.8 & 2009-02 \\
+ & RF & 16.28 & 15.14 & 0.608 & 0.889 & -47.8 & 2009-02 \\
+ & Logistic L2 & 16.01 & 14.86 & 0.599 & 0.858 & -47.8 & 2009-02 \\
+ & XGB & 15.68 & 14.42 & 0.573 & 0.849 & -47.8 & 2009-02 \\
+\addlinespace[0.15cm]
+\multicolumn{8}{l}{\textit{\textbf{Rolling $\beta$}}} \\
+ & LSTM Rolling 10Y & 16.34 & 15.32 & 0.627 & 0.903 & -45.1 & 2009-02 \\
+ & LSTM Expanding & 16.17 & 15.06 & 0.609 & 0.878 & -45.1 & 2009-02 \\
+ & RF & 16.19 & 15.01 & 0.599 & 0.880 & -45.1 & 2009-02 \\
+ & Logistic L2 & 15.82 & 14.65 & 0.590 & 0.848 & -45.1 & 2009-02 \\
+ & XGB & 15.49 & 14.18 & 0.560 & 0.835 & -45.1 & 2009-02 \\
+\addlinespace[0.15cm]
+\multicolumn{8}{l}{\textit{\textbf{EWMA $\beta$}}} \\
+ & LSTM Rolling 10Y & 16.16 & 15.13 & 0.618 & 0.885 & -46.1 & 2009-02 \\
+ & LSTM Expanding & 16.12 & 14.99 & 0.604 & 0.869 & -46.1 & 2009-02 \\
+ & Logistic L2 & 15.93 & 14.75 & 0.593 & 0.853 & -46.1 & 2009-02 \\
+ & RF & 15.96 & 14.73 & 0.586 & 0.850 & -46.1 & 2009-02 \\
+ & XGB & 15.29 & 13.92 & 0.547 & 0.812 & -46.1 & 2009-02 \\
+\addlinespace[0.15cm]
+\multicolumn{8}{l}{\textit{\textbf{Kalman $\beta$}}} \\
+ & LSTM Rolling 10Y & 16.20 & 15.16 & 0.620 & 0.890 & -45.2 & 2009-02 \\
+ & LSTM Expanding & 16.24 & 15.12 & 0.610 & 0.881 & -45.2 & 2009-02 \\
+ & RF & 16.11 & 14.91 & 0.594 & 0.869 & -45.2 & 2009-02 \\
+ & Logistic L2 & 15.87 & 14.69 & 0.590 & 0.850 & -45.2 & 2009-02 \\
+ & XGB & 15.43 & 14.11 & 0.557 & 0.829 & -45.2 & 2009-02 \\
+\addlinespace[0.15cm]
+\midrule
+\textit{NYSE P20} & \textit{Benchmark} & \textit{14.71} & \textit{13.95} & \textit{0.613} & \textit{0.846} & \textit{-48.4} & \textit{2009-02} \\
+\bottomrule
+\end{tabular}}
+\end{minipage}
+
+
+\vspace{0.3cm}
+\caption*{\textbf{Notes:} This table presents the complete performance metrics for all 25 basket-model combinations under gross returns (left panel, signal power) and net returns (right panel, realizability after transaction costs). The sample consists of NYSE/AMEX/NASDAQ stocks with price $\geq$ \$5 and market capitalization $\geq$ 20th percentile (NYSE) from July 1980 to June 2024 (528 months). Within each basket, models are sorted by Sharpe ratio (descending). Net returns incorporate Frazzini (2018) transaction costs applied annually in June. The NYSE P20 Benchmark is an equal-weighted portfolio of all eligible stocks with monthly rebalancing (no transaction costs, identical for both panels). \textit{Ann. Ret.} = annualized arithmetic return, \textit{CAGR} = compound annual growth rate, \textit{Sharpe} = Sharpe ratio, \textit{Sortino} = Sortino ratio, \textit{Max DD} = maximum drawdown, \textit{Date} = date of maximum drawdown. Requires packages \texttt{pdflscape} and \texttt{booktabs}.}
+\end{table}
+\end{landscape}

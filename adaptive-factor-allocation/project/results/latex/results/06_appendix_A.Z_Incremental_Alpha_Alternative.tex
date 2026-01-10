@@ -1,0 +1,47 @@
+\begin{table}[htbp]
+\centering
+\caption{Incremental Alpha: Alternative Factor Models (CAPM, FF5, FF7)}
+\label{tab:incremental_alpha_alternative}
+\small
+\renewcommand{\arraystretch}{1.2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l S[table-format=2.2] l S[table-format=1.2] S[table-format=1.3] S[table-format=2.2] l S[table-format=1.2] S[table-format=1.3] S[table-format=2.2] l S[table-format=1.2] S[table-format=1.3]}
+\toprule
+\textbf{Basket} & \textbf{Model} & \multicolumn{4}{c}{\textbf{CAPM}} & \multicolumn{4}{c}{\textbf{FF5}} & \multicolumn{4}{c}{\textbf{FF7}} \\
+\cmidrule(lr){3-6} \cmidrule(lr){7-10} \cmidrule(lr){11-14}
+ & & {$\Delta\alpha$} & & {$t$} & {$p$} & {$\Delta\alpha$} & & {$t$} & {$p$} & {$\Delta\alpha$} & & {$t$} & {$p$} \\
+\midrule
+Economic & Logistic & {-0.25} &  & {-0.99} & 0.325 & {0.02} &  & {0.06} & 0.949 & {-0.13} &  & {-0.48} & 0.634 \\
+ & RF & {-0.29} &  & {-0.90} & 0.370 & {-0.58} & * & {-1.87} & 0.062 & {-0.48} &  & {-1.61} & 0.108 \\
+ & XGB & {0.28} &  & {0.94} & 0.349 & {-0.05} &  & {-0.21} & 0.832 & {0.00} &  & {0.01} & 0.991 \\
+ & LSTM-Exp & {-0.45} &  & {-1.32} & 0.188 & {-0.38} &  & {-1.10} & 0.271 & {-0.37} &  & {-1.14} & 0.253 \\
+ & LSTM-Roll & {-0.62} & * & {-1.84} & 0.065 & {-0.48} &  & {-1.35} & 0.177 & {-0.45} &  & {-1.36} & 0.172 \\
+\midrule
+Beta Exp. & Logistic & {-0.16} &  & {-0.40} & 0.688 & {-0.33} &  & {-0.64} & 0.521 & {-0.32} &  & {-0.58} & 0.564 \\
+ & RF & {0.30} &  & {0.65} & 0.519 & {0.78} & * & {1.69} & 0.090 & {0.66} &  & {1.36} & 0.173 \\
+ & XGB & {-0.44} &  & {-1.01} & 0.310 & {0.40} &  & {0.90} & 0.367 & {0.38} &  & {0.77} & 0.441 \\
+ & LSTM-Exp & {0.35} &  & {0.71} & 0.476 & {0.19} &  & {0.37} & 0.715 & {-0.12} &  & {-0.22} & 0.825 \\
+ & LSTM-Roll & {0.61} &  & {1.29} & 0.198 & {0.41} &  & {0.75} & 0.453 & {0.18} &  & {0.33} & 0.743 \\
+\midrule
+Rolling $\beta$ & Logistic & {-0.12} &  & {-0.21} & 0.837 & {-0.41} &  & {-0.59} & 0.558 & {-0.37} &  & {-0.53} & 0.599 \\
+ & RF & {0.51} &  & {0.83} & 0.405 & {1.15} & * & {1.87} & 0.062 & {1.02} &  & {1.57} & 0.116 \\
+ & XGB & {-0.36} &  & {-0.62} & 0.536 & {0.66} &  & {1.13} & 0.260 & {0.73} &  & {1.10} & 0.271 \\
+ & LSTM-Exp & {0.58} &  & {0.85} & 0.396 & {0.51} &  & {0.71} & 0.475 & {0.12} &  & {0.16} & 0.873 \\
+ & LSTM-Roll & {0.83} &  & {1.27} & 0.204 & {0.71} &  & {0.98} & 0.329 & {0.42} &  & {0.58} & 0.563 \\
+\midrule
+EWMA $\beta$ & Logistic & {-0.06} &  & {-0.11} & 0.915 & {-0.39} &  & {-0.57} & 0.570 & {-0.31} &  & {-0.48} & 0.635 \\
+ & RF & {0.25} &  & {0.38} & 0.702 & {0.89} &  & {1.45} & 0.148 & {0.68} &  & {1.08} & 0.280 \\
+ & XGB & {-0.70} &  & {-1.09} & 0.278 & {0.39} &  & {0.67} & 0.501 & {0.38} &  & {0.59} & 0.552 \\
+ & LSTM-Exp & {0.58} &  & {0.74} & 0.462 & {0.45} &  & {0.62} & 0.536 & {0.06} &  & {0.09} & 0.927 \\
+ & LSTM-Roll & {0.77} &  & {1.04} & 0.300 & {0.57} &  & {0.77} & 0.440 & {0.36} &  & {0.52} & 0.602 \\
+\midrule
+Kalman $\beta$ & Logistic & {-0.07} &  & {-0.12} & 0.906 & {-0.27} &  & {-0.41} & 0.680 & {-0.26} &  & {-0.40} & 0.693 \\
+ & RF & {0.37} &  & {0.61} & 0.542 & {0.96} &  & {1.63} & 0.103 & {0.71} &  & {1.18} & 0.238 \\
+ & XGB & {-0.52} &  & {-0.85} & 0.393 & {0.45} &  & {0.80} & 0.421 & {0.38} &  & {0.61} & 0.540 \\
+ & LSTM-Exp & {0.63} &  & {0.91} & 0.362 & {0.58} &  & {0.86} & 0.392 & {0.16} &  & {0.24} & 0.808 \\
+ & LSTM-Roll & {0.70} &  & {1.05} & 0.292 & {0.54} &  & {0.79} & 0.430 & {0.28} &  & {0.42} & 0.673 \\
+\bottomrule
+\end{tabular}%
+}
+\caption*{\footnotesize \textit{Notes:} This table reports incremental alphas ($\Delta\alpha$, annualized in \% p.a.) for all 25 ML strategies (5 baskets $\times$ 5 models) against the 50/50 benchmark, using alternative factor models: CAPM (single-factor), Fama--French 5-factor (FF5), and Fama--French 7-factor (FF7, which extends FF6 by adding the quality-minus-junk factor). Incremental alphas are computed by regressing the difference between ML and 50/50 benchmark returns on each factor model. $t$-statistics use Newey-West HAC standard errors (12 lags) on monthly data. $p$ = raw $p$-value. All returns are net of transaction costs. This robustness check complements the main FF6/Q5 analysis (Table \ref{tab:incremental_alpha_full}). Sample: July 1980--June 2024. Significance: *** $p<0.01$, ** $p<0.05$, * $p<0.10$.}
+\end{table}

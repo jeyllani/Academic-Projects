@@ -1,0 +1,47 @@
+\begin{table}[htbp]
+\centering
+\caption{Incremental Alpha: All ML Strategies vs 50/50 Benchmark (Full)}
+\label{tab:incremental_alpha_full}
+\small
+\renewcommand{\arraystretch}{1.2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l S[table-format=2.2] l S[table-format=1.2] S[table-format=1.3] S[table-format=1.3] S[table-format=2.2] l S[table-format=1.2] S[table-format=1.3] S[table-format=1.3]}
+\toprule
+\textbf{Basket} & \textbf{Model} & \multicolumn{5}{c}{\textbf{FF6}} & \multicolumn{5}{c}{\textbf{Q5}} \\
+\cmidrule(lr){3-7} \cmidrule(lr){8-12}
+ & & {$\Delta\alpha$} & & {$t$} & {$p$} & {$q$ (FDR)} & {$\Delta\alpha$} & & {$t$} & {$p$} & {$q$ (FDR)} \\
+\midrule
+Economic & Logistic & {-0.04} &  & {-0.14} & 0.890 & 0.927 & {-0.06} &  & {-0.21} & 0.830 & 0.899 \\
+ & RF & {-0.45} &  & {-1.54} & 0.124 & 0.636 & {-0.26} &  & {-0.83} & 0.408 & 0.899 \\
+ & XGB & {0.03} &  & {0.12} & 0.907 & 0.927 & {-0.03} &  & {-0.10} & 0.918 & 0.918 \\
+ & LSTM-Exp & {-0.28} &  & {-0.88} & 0.378 & 0.859 & {-0.13} &  & {-0.46} & 0.649 & 0.899 \\
+ & LSTM-Roll & {-0.39} &  & {-1.23} & 0.219 & 0.781 & {-0.26} &  & {-0.88} & 0.377 & 0.899 \\
+\midrule
+Beta Exp. & Logistic & {-0.19} &  & {-0.36} & 0.721 & 0.927 & {-0.56} &  & {-0.83} & 0.406 & 0.899 \\
+ & RF & {0.72} &  & {1.58} & 0.114 & 0.636 & {0.37} &  & {0.71} & 0.477 & 0.899 \\
+ & XGB & {0.48} &  & {1.04} & 0.300 & 0.825 & {0.27} &  & {0.49} & 0.624 & 0.899 \\
+ & LSTM-Exp & {-0.05} &  & {-0.09} & 0.927 & 0.927 & {-0.45} &  & {-0.65} & 0.517 & 0.899 \\
+ & LSTM-Roll & {0.10} &  & {0.20} & 0.844 & 0.927 & {-0.12} &  & {-0.17} & 0.863 & 0.899 \\
+\midrule
+Rolling $\beta$ & Logistic & {-0.23} &  & {-0.33} & 0.740 & 0.927 & {-0.89} &  & {-1.00} & 0.319 & 0.899 \\
+ & RF & {1.14} & * & {1.92} & 0.054 & 0.636 & {0.68} &  & {0.90} & 0.370 & 0.899 \\
+ & XGB & {0.86} &  & {1.44} & 0.151 & 0.636 & {0.53} &  & {0.66} & 0.508 & 0.899 \\
+ & LSTM-Exp & {0.21} &  & {0.30} & 0.761 & 0.927 & {-0.56} &  & {-0.62} & 0.534 & 0.899 \\
+ & LSTM-Roll & {0.40} &  & {0.58} & 0.564 & 0.927 & {-0.22} &  & {-0.25} & 0.803 & 0.899 \\
+\midrule
+EWMA $\beta$ & Logistic & {-0.13} &  & {-0.21} & 0.836 & 0.927 & {-0.95} &  & {-1.13} & 0.257 & 0.899 \\
+ & RF & {0.82} &  & {1.43} & 0.153 & 0.636 & {0.27} &  & {0.38} & 0.705 & 0.899 \\
+ & XGB & {0.57} &  & {0.97} & 0.330 & 0.825 & {0.14} &  & {0.18} & 0.860 & 0.899 \\
+ & LSTM-Exp & {0.20} &  & {0.29} & 0.772 & 0.927 & {-0.79} &  & {-0.95} & 0.341 & 0.899 \\
+ & LSTM-Roll & {0.32} &  & {0.48} & 0.632 & 0.927 & {-0.50} &  & {-0.64} & 0.520 & 0.899 \\
+\midrule
+Kalman $\beta$ & Logistic & {-0.11} &  & {-0.18} & 0.854 & 0.927 & {-0.79} &  & {-0.97} & 0.330 & 0.899 \\
+ & RF & {0.89} &  & {1.61} & 0.107 & 0.636 & {0.33} &  & {0.46} & 0.642 & 0.899 \\
+ & XGB & {0.59} &  & {1.04} & 0.297 & 0.825 & {0.14} &  & {0.19} & 0.852 & 0.899 \\
+ & LSTM-Exp & {0.29} &  & {0.45} & 0.651 & 0.927 & {-0.53} &  & {-0.64} & 0.521 & 0.899 \\
+ & LSTM-Roll & {0.24} &  & {0.37} & 0.710 & 0.927 & {-0.40} &  & {-0.51} & 0.611 & 0.899 \\
+\bottomrule
+\end{tabular}%
+}
+\caption*{\footnotesize \textit{Notes:} This table reports incremental alphas ($\Delta\alpha$, annualized in \% p.a.) for all 25 ML strategies (5 baskets $\times$ 5 models) against a 50/50 benchmark (50\% Buy\&Hold Offensive + 50\% Defensive). Incremental alphas are computed by regressing the difference between ML and benchmark returns on Fama--French 6-factor (FF6) and Hou--Xue--Zhang $q$-factor (Q5) models. $t$-statistics use Newey-West HAC standard errors (12 lags) on monthly data. $p$ = raw $p$-value; $q$ (FDR) = Benjamini-Hochberg FDR-adjusted $p$-value ($\alpha=10\%$). All returns are net of transaction costs. Sample: July 1980--June 2024. Significance: *** $p<0.01$, ** $p<0.05$, * $p<0.10$.}
+\end{table}

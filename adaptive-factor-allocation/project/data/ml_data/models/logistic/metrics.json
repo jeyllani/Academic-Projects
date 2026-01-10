@@ -1,0 +1,38 @@
+{
+  "model_name": "L2-Regularized Logistic Regression (Walk-Forward)",
+  "target": "Y_EWMA_BINARY",
+  "backtesting_protocol": {
+    "method": "Walk-Forward Expanding Window",
+    "first_formation": "1980-06-30",
+    "last_formation": "2023-06-30",
+    "total_formations": 44,
+    "refit_frequency": "Annual"
+  },
+  "performance": {
+    "overall": {
+      "accuracy": 0.7272727272727273,
+      "precision": 0.6666666666666666,
+      "recall": 0.5,
+      "f1": 0.5714285714285714,
+      "roc_auc": 0.8392857142857142
+    },
+    "yearly_mean": 0.7272727272727273,
+    "yearly_median": 1.0,
+    "yearly_std": 0.4505106334669668,
+    "extended": {
+      "balanced_accuracy": 0.6785714285714286,
+      "auc": 0.8392857142857142,
+      "f1_macro": 0.6857142857142857,
+      "brier_score": 0.17206971820944353,
+      "log_loss": 0.5192469370755161,
+      "n_obs": 44
+    }
+  },
+  "class_distribution": {
+    "actual_regime_0": 28,
+    "actual_regime_1": 16,
+    "predicted_regime_0": 32,
+    "predicted_regime_1": 12
+  },
+  "training_date": "2025-12-29T04:26:44.425246"
+}

@@ -1,0 +1,35 @@
+\begin{table}[htbp]
+\centering
+\caption{Performance Comparison: Signal Power vs. Realizability (1980--2024)}
+\label{tab:performance_comparison}
+\footnotesize
+\renewcommand{\arraystretch}{1.25}
+\resizebox{0.95\textwidth}{!}{%
+\begin{tabular}{l l r r r r r r r r}
+\toprule
+\textbf{Basket Strategy} & \textbf{Best ML Model} & \textbf{Ann. Ret.} & \textbf{CAGR} & \textbf{Vol.} & \textbf{Sharpe} & \textbf{Sortino} & \textbf{Max DD} & \textbf{DD Date} \\
+ & & \textbf{(\%)} & \textbf{(\%)} & \textbf{(\%)} & & & \textbf{(\%)} & \\
+\midrule
+\multicolumn{9}{l}{\textbf{Panel A: Gross Returns (Signal Power)}} \\
+\addlinespace[0.1cm]
+Beta Expansion & LSTM (Rolling 10Y) & 16.85 & 15.88 & 19.96 & \textbf{0.649} & 0.933 & -47.5 & 2009-02 \\
+Rolling Beta & LSTM (Rolling 10Y) & 16.71 & 15.75 & 19.86 & 0.646 & 0.931 & -44.8 & 2009-02 \\
+Kalman Filter Beta & LSTM (Rolling 10Y) & 16.58 & 15.60 & 19.86 & 0.639 & 0.918 & -44.9 & 2009-02 \\
+EWMA Beta & LSTM (Rolling 10Y) & 16.55 & 15.57 & 19.86 & 0.638 & 0.913 & -45.8 & 2009-02 \\
+Economic Basket & XGBoost & 15.93 & 14.78 & 20.22 & 0.596 & 0.860 & -49.0 & 2009-02 \\
+\cdashline{1-9}
+\textit{Benchmark (NYSE P20)} & \textit{---} & \textit{14.71} & \textit{13.95} & \textit{17.66} & \textit{0.613} & \textit{0.846} & \textit{-48.4} & \textit{2009-02} \\
+\midrule
+\multicolumn{9}{l}{\textbf{Panel B: Net Returns (Realizability)}} \\
+\addlinespace[0.1cm]
+Beta Expansion & LSTM (Rolling 10Y) & 16.47 & 15.45 & 19.97 & \textbf{0.631} & 0.906 & -47.8 & 2009-02 \\
+Rolling Beta & LSTM (Rolling 10Y) & 16.34 & 15.32 & 19.87 & 0.627 & 0.903 & -45.1 & 2009-02 \\
+Kalman Filter Beta & LSTM (Rolling 10Y) & 16.20 & 15.16 & 19.87 & 0.620 & 0.890 & -45.2 & 2009-02 \\
+EWMA Beta & LSTM (Rolling 10Y) & 16.16 & 15.13 & 19.86 & 0.618 & 0.885 & -46.1 & 2009-02 \\
+Economic Basket & XGBoost & 15.54 & 14.34 & 20.22 & 0.577 & 0.832 & -49.3 & 2009-02 \\
+\cdashline{1-9}
+\textit{Benchmark (NYSE P20)} & \textit{---} & \textit{14.71} & \textit{13.95} & \textit{17.66} & \textit{0.613} & \textit{0.846} & \textit{-48.4} & \textit{2009-02} \\
+\bottomrule
+\end{tabular}}
+\caption*{\textbf{Notes:} This table compares the performance of the best-performing ML model for each basket strategy under two conditions: gross returns (Panel A, signal power) and net returns (Panel B, realizability after transaction costs). The sample consists of NYSE/AMEX/NASDAQ stocks with price $\geq$ \$5 and market capitalization $\geq$ 20th percentile (NYSE) from July 1980 to June 2024 (528 months). The Market Benchmark is an equal-weighted portfolio of all eligible stocks with monthly rebalancing (no transaction costs). Panel A measures \textit{signal power} (returns before costs), while Panel B measures \textit{realizability} (returns after Frazzini (2018) transaction costs, applied annually in June). For each basket, the best ML model is selected based on the highest Sharpe ratio among five models: Logistic Regression (L2), Random Forest, XGBoost, LSTM (Expanding Window), and LSTM (Rolling 10Y). \textit{Ann. Ret.} = annualized arithmetic return, \textit{CAGR} = compound annual growth rate, \textit{Vol.} = annualized volatility, \textit{Sharpe} = Sharpe ratio, \textit{Sortino} = Sortino ratio, \textit{Max DD} = maximum drawdown, \textit{DD Date} = date of maximum drawdown. Requires package \texttt{arydshln} for dashed lines.}
+\end{table}

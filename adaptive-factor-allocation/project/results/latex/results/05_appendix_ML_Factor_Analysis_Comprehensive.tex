@@ -1,0 +1,64 @@
+\begin{table}[htbp]
+\centering
+\caption{Comprehensive Factor Analysis: Classic Baskets and ML Strategies (Net Returns)}
+\label{tab:ml_factor_comprehensive}
+\scriptsize
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l r l r r r l r r r l r r r l r r}
+\toprule
+\textbf{Basket} & \textbf{Strategy} & \multicolumn{4}{c}{\textbf{FF5}} & \multicolumn{4}{c}{\textbf{FF6}} & \multicolumn{4}{c}{\textbf{FF7}} & \multicolumn{4}{c}{\textbf{Q5}} \\
+\cmidrule(lr){3-6} \cmidrule(lr){7-10} \cmidrule(lr){11-14} \cmidrule(lr){15-18}
+ & & $\alpha$ & & $t$ & $R^2$ & $\alpha$ & & $t$ & $R^2$ & $\alpha$ & & $t$ & $R^2$ & $\alpha$ & & $t$ & $R^2$ \\
+\midrule
+\multicolumn{18}{l}{\textbf{Panel A: Classic Buy\&Hold Baskets (Net)}} \\
+Economic & (Offensive) & -0.29 &  & -0.23 & 0.924 & 1.26 &  & 0.96 & 0.939 & 1.13 &  & 0.79 & 0.939 & 2.11 &  & 1.31 & 0.904 \\
+ & (Defensive) & 0.90 &  & 0.77 & 0.943 & 2.14 & * & 1.68 & 0.954 & 1.95 &  & 1.42 & 0.954 & 2.22 &  & 1.36 & 0.936 \\
+\midrule
+Beta Exp. & (Offensive) & 1.39 &  & 1.04 & 0.938 & 2.82 & * & 1.94 & 0.951 & 2.60 & * & 1.66 & 0.951 & 3.00 &  & 1.59 & 0.934 \\
+ & (Defensive) & 0.01 &  & 0.01 & 0.933 & 1.28 &  & 1.17 & 0.945 & 1.15 &  & 0.99 & 0.945 & 1.80 &  & 1.22 & 0.911 \\
+\midrule
+Rolling $\beta$ & (Offensive) & 1.39 &  & 0.96 & 0.932 & 2.91 & * & 1.80 & 0.945 & 2.70 &  & 1.57 & 0.945 & 3.25 &  & 1.57 & 0.929 \\
+ & (Defensive) & -0.11 &  & -0.10 & 0.929 & 1.08 &  & 1.03 & 0.939 & 0.94 &  & 0.83 & 0.940 & 1.37 &  & 0.96 & 0.903 \\
+\midrule
+EWMA $\beta$ & (Offensive) & 1.18 &  & 0.84 & 0.933 & 2.62 & * & 1.70 & 0.945 & 2.38 &  & 1.45 & 0.946 & 2.98 &  & 1.51 & 0.932 \\
+ & (Defensive) & 0.16 &  & 0.14 & 0.927 & 1.33 &  & 1.19 & 0.937 & 1.21 &  & 0.99 & 0.938 & 1.64 &  & 1.12 & 0.900 \\
+\midrule
+Kalman $\beta$ & (Offensive) & 1.33 &  & 0.95 & 0.933 & 2.78 & * & 1.84 & 0.945 & 2.49 &  & 1.54 & 0.946 & 3.03 &  & 1.56 & 0.931 \\
+ & (Defensive) & -0.14 &  & -0.12 & 0.927 & 1.08 &  & 0.96 & 0.938 & 1.00 &  & 0.82 & 0.939 & 1.49 &  & 0.99 & 0.901 \\
+\midrule
+\multicolumn{18}{l}{\textbf{Panel B: Machine Learning Strategies (Net)}} \\
+Economic & Logistic & 0.32 &  & 0.26 & 0.933 & 1.66 &  & 1.27 & 0.945 & 1.40 &  & 0.99 & 0.945 & 2.10 &  & 1.31 & 0.923 \\
+ & RF & -0.28 &  & -0.23 & 0.926 & 1.25 &  & 0.98 & 0.941 & 1.06 &  & 0.77 & 0.942 & 1.90 &  & 1.21 & 0.909 \\
+ & XGB & 0.25 &  & 0.20 & 0.927 & 1.73 &  & 1.31 & 0.941 & 1.54 &  & 1.08 & 0.941 & 2.14 &  & 1.32 & 0.908 \\
+ & LSTM-Exp & -0.08 &  & -0.06 & 0.925 & 1.42 &  & 1.14 & 0.940 & 1.17 &  & 0.88 & 0.941 & 2.03 &  & 1.27 & 0.913 \\
+ & LSTM-Roll & -0.17 &  & -0.14 & 0.927 & 1.31 &  & 1.06 & 0.941 & 1.09 &  & 0.82 & 0.942 & 1.90 &  & 1.19 & 0.915 \\
+\midrule
+Beta Exp. & Logistic & 0.37 &  & 0.31 & 0.931 & 1.86 & * & 1.66 & 0.946 & 1.56 &  & 1.26 & 0.946 & 1.84 &  & 1.25 & 0.916 \\
+ & RF & 1.49 &  & 1.12 & 0.938 & 2.77 & * & 1.94 & 0.948 & 2.53 & * & 1.66 & 0.949 & 2.77 &  & 1.49 & 0.932 \\
+ & XGB & 1.10 &  & 0.78 & 0.935 & 2.53 & * & 1.66 & 0.947 & 2.26 &  & 1.36 & 0.948 & 2.67 &  & 1.32 & 0.930 \\
+ & LSTM-Exp & 0.90 &  & 0.83 & 0.947 & 2.00 & * & 1.80 & 0.955 & 1.76 &  & 1.46 & 0.956 & 1.95 &  & 1.55 & 0.936 \\
+ & LSTM-Roll & 1.12 &  & 1.03 & 0.947 & 2.16 & * & 1.92 & 0.954 & 2.06 & * & 1.71 & 0.954 & 2.28 & * & 1.74 & 0.935 \\
+\midrule
+Rolling $\beta$ & Logistic & 0.23 &  & 0.18 & 0.918 & 1.77 &  & 1.52 & 0.934 & 1.45 &  & 1.12 & 0.934 & 1.42 &  & 0.93 & 0.902 \\
+ & RF & 1.80 &  & 1.26 & 0.929 & 3.14 & ** & 2.02 & 0.940 & 2.85 & * & 1.71 & 0.941 & 2.99 &  & 1.49 & 0.926 \\
+ & XGB & 1.30 &  & 0.87 & 0.926 & 2.85 & * & 1.74 & 0.941 & 2.55 &  & 1.44 & 0.942 & 2.84 &  & 1.30 & 0.924 \\
+ & LSTM-Exp & 1.16 &  & 0.98 & 0.941 & 2.21 & * & 1.83 & 0.948 & 1.94 &  & 1.48 & 0.948 & 1.75 &  & 1.39 & 0.933 \\
+ & LSTM-Roll & 1.35 &  & 1.14 & 0.940 & 2.39 & ** & 1.99 & 0.947 & 2.24 & * & 1.71 & 0.948 & 2.09 &  & 1.59 & 0.931 \\
+\midrule
+EWMA $\beta$ & Logistic & 0.28 &  & 0.21 & 0.915 & 1.84 &  & 1.54 & 0.931 & 1.49 &  & 1.12 & 0.932 & 1.36 &  & 0.87 & 0.899 \\
+ & RF & 1.56 &  & 1.09 & 0.929 & 2.80 & * & 1.83 & 0.938 & 2.47 &  & 1.51 & 0.939 & 2.58 &  & 1.31 & 0.927 \\
+ & XGB & 1.06 &  & 0.72 & 0.926 & 2.54 &  & 1.60 & 0.940 & 2.17 &  & 1.26 & 0.941 & 2.45 &  & 1.15 & 0.925 \\
+ & LSTM-Exp & 1.12 &  & 0.88 & 0.937 & 2.17 & * & 1.65 & 0.944 & 1.86 &  & 1.30 & 0.945 & 1.52 &  & 1.15 & 0.930 \\
+ & LSTM-Roll & 1.23 &  & 0.98 & 0.936 & 2.29 & * & 1.76 & 0.944 & 2.15 &  & 1.52 & 0.944 & 1.81 &  & 1.32 & 0.928 \\
+\midrule
+Kalman $\beta$ & Logistic & 0.33 &  & 0.25 & 0.919 & 1.82 &  & 1.51 & 0.933 & 1.49 &  & 1.11 & 0.934 & 1.47 &  & 0.94 & 0.903 \\
+ & RF & 1.56 &  & 1.12 & 0.930 & 2.82 & * & 1.91 & 0.940 & 2.46 &  & 1.55 & 0.941 & 2.59 &  & 1.35 & 0.927 \\
+ & XGB & 1.05 &  & 0.72 & 0.927 & 2.52 &  & 1.61 & 0.940 & 2.12 &  & 1.25 & 0.942 & 2.40 &  & 1.14 & 0.925 \\
+ & LSTM-Exp & 1.18 &  & 0.98 & 0.939 & 2.23 & * & 1.81 & 0.946 & 1.91 &  & 1.41 & 0.947 & 1.73 &  & 1.32 & 0.931 \\
+ & LSTM-Roll & 1.14 &  & 0.94 & 0.938 & 2.17 & * & 1.73 & 0.945 & 2.02 &  & 1.48 & 0.946 & 1.86 &  & 1.35 & 0.929 \\
+\bottomrule
+\end{tabular}%
+}
+\caption*{\scriptsize \textit{Notes:} This table reports risk-adjusted alphas ($\alpha$, in \% per annum), $t$-statistics (Newey-West HAC, 12 lags), and $R^2$ for all ML strategies across five baskets and four factor models. All returns are net of transaction costs. FF5/FF6/FF7 are Fama--French factor models: FF5 includes market (MKT), size (SMB), value (HML), profitability (RMW), and investment (CMA); FF6 extends FF5 by adding momentum (UMD); and \textbf{FF7 extends FF6 by adding quality-minus-junk (QMJ)}. Q5 refers to the Hou--Xue--Zhang $q$-factor model (market, size, investment, profitability, and expected growth). Significance: *** $p<0.01$, ** $p<0.05$, * $p<0.10$. Sample: July 1980--June 2024.}
+\end{table}

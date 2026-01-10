@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{Sample Construction and Filtering Procedure}
+\label{tab:data_overview}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Period} & \textbf{Years} & \textbf{Raw CRSP} & \textbf{After Exchange} & \textbf{After P20} & \textbf{Eligible $\geq$\$5} \\
+\midrule
+Early Period & 1963–1979 & 3,045 & 2,975 & 1,167 & 1,152 \\
+Middle Period & 1980–1999 & 6,799 & 6,645 & 2,435 & 2,391 \\
+Recent Period & 2000–2024 & 6,088 & 5,960 & 3,278 & 3,128 \\
+Overall & 1963–2024 & 5,483 & 5,363 & 2,427 & 2,348 \\
+\bottomrule
+\end{tabular}
+
+\medskip
+
+\begin{minipage}{\textwidth}
+\small
+\textbf{Notes:} This table reports the average number of firms at each stage of the sample construction process across three distinct periods. \textit{Raw CRSP} includes all securities in the CRSP database. \textit{After Exchange} restricts the sample to NYSE, AMEX, and NASDAQ listings (EXCHCD $\in \{1,2,3\}$). \textit{After P20} applies the Fama-French size filter, requiring market capitalization to exceed the 20\textsuperscript{th} percentile of NYSE firms measured in June. \textit{Eligible $\geq$\$5} further excludes stocks with prices below \$5. Formation dates occur annually in June following Fama and French (1993). The filtering procedure removes micro-cap stocks, penny stocks, and illiquid securities to ensure economically meaningful portfolio analysis. Sample period: July 1963 to June 2024.
+\end{minipage}
+
+\end{table}

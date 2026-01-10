@@ -1,0 +1,20 @@
+
+\begin{table}[htbp]
+\centering
+\caption{EWMA Volatility Forecast Calibration Quality (1980--2023)}
+\label{tab:ewma_calibration}
+\begin{tabular}{lccccc}
+\toprule
+Correlation & Regime Acc. (\%) & Bias (\%) & MAE (\%) & RMSE (\%) & $N$ \\
+\midrule
+0.083 & 54.4 & -0.327 & 1.78 & 2.25 & 517 \\
+\bottomrule
+\end{tabular}
+\caption*{\footnotesize \textbf{Note:} \textit{Correlation}: Pearson correlation between EWMA forecast (June $t$) and realized volatility (July $t$ $\rightarrow$ June $t+1$). 
+\textit{Regime Acc.}: fraction of observations where $\mathbb{1}\{\hat{\sigma}_{t}>\mathrm{median}(\hat{\sigma})\}=\mathbb{1}\{\sigma^{\text{real}}_{t}>\mathrm{median}(\sigma^{\text{real}})\}$ (High/Low regime classification accuracy).
+\textit{Bias}: mean forecast error (Realized $-$ EWMA). 
+\textit{MAE}: Mean Absolute Error. 
+\textit{RMSE}: Root Mean Squared Error. 
+EWMA volatility computed with $\lambda=0.94$, 60-month rolling window, MA12 smoothing on NYSE P80 equally-weighted benchmark returns. 
+Sample: 517 monthly observations (June 1980--June 2023).}
+\end{table}

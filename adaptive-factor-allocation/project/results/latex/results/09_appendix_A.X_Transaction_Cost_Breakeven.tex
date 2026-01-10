@@ -1,0 +1,63 @@
+\begin{table}[htbp]
+\centering
+\caption{Break-Even Transaction Cost Analysis: All ML Strategies}
+\label{tab:appendix_breakeven_tc}
+\small
+\renewcommand{\arraystretch}{1.2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l r r r r r r r}
+\toprule
+\multirow{2}{*}{\textbf{Basket}} & \multirow{2}{*}{\textbf{Model}} & \multirow{2}{*}{\textbf{NET Return}} & \multicolumn{3}{c}{\textbf{Panel A: vs Market (14.71\%)}} & \multicolumn{3}{c}{\textbf{Panel B: vs 50/50 Benchmark}} \\
+\cmidrule(lr){4-6} \cmidrule(lr){7-9}
+& & & \textbf{Headroom} & \textbf{Total TC @ BE} & \textbf{TC Mult.} & \textbf{Headroom} & \textbf{Total TC @ BE} & \textbf{TC Mult.} \\
+& & \textbf{(\% p.a.)} & \textbf{(bps/yr)} & \textbf{(bps/yr)} & & \textbf{(bps/yr)} & \textbf{(bps/yr)} & \\
+\midrule
+Economic & LSTM-Exp & 14.93 & 22 & 77 & 1.41 & -77 & 0 & 0.00 \\
+& LSTM-Roll & 14.91 & 20 & 74 & 1.37 & -86 & 0 & 0.00 \\
+& Logistic & 15.10 & 39 & 94 & 1.72 & -65 & 0 & 0.00 \\
+& RF & 15.17 & 46 & 100 & 1.84 & -60 & 0 & 0.00 \\
+& XGBoost & 15.54 & 83 & 138 & 2.53 & -25 & 32 & 0.56 \\
+\addlinespace
+Beta Expansion & LSTM-Exp & 16.38 & 167 & 231 & 3.63 & -0 & 65 & 1.00 \\
+& LSTM-Roll & 16.47 & 176 & 240 & 3.77 & 0 & 65 & 1.00 \\
+& Logistic & 16.01 & 130 & 194 & 3.04 & -62 & 3 & 0.05 \\
+& RF & 16.28 & 157 & 221 & 3.46 & 6 & 71 & 1.09 \\
+& XGBoost & 15.68 & 97 & 160 & 2.52 & -10 & 55 & 0.85 \\
+\addlinespace
+Rolling Beta & LSTM-Exp & 16.17 & 146 & 224 & 2.87 & 2 & 80 & 1.02 \\
+& LSTM-Roll & 16.34 & 163 & 241 & 3.08 & -50 & 28 & 0.36 \\
+& Logistic & 15.82 & 111 & 189 & 2.42 & -69 & 10 & 0.12 \\
+& RF & 16.19 & 148 & 226 & 2.90 & -13 & 65 & 0.83 \\
+& XGBoost & 15.49 & 78 & 156 & 2.00 & -50 & 28 & 0.36 \\
+\addlinespace
+EWMA Beta & LSTM-Exp & 16.12 & 141 & 229 & 2.59 & 18 & 107 & 1.20 \\
+& LSTM-Roll & 16.16 & 145 & 234 & 2.65 & -29 & 60 & 0.68 \\
+& Logistic & 15.93 & 122 & 210 & 2.38 & -54 & 35 & 0.39 \\
+& RF & 15.96 & 125 & 214 & 2.42 & -12 & 77 & 0.86 \\
+& XGBoost & 15.29 & 58 & 146 & 1.65 & -33 & 56 & 0.63 \\
+\addlinespace
+Kalman Beta & LSTM-Exp & 16.24 & 153 & 224 & 3.13 & 19 & 87 & 1.28 \\
+& LSTM-Roll & 16.20 & 149 & 220 & 3.07 & -27 & 41 & 0.61 \\
+& Logistic & 15.87 & 116 & 188 & 2.63 & -52 & 16 & 0.24 \\
+& RF & 16.11 & 140 & 212 & 2.96 & -1 & 67 & 0.98 \\
+& XGBoost & 15.43 & 72 & 144 & 2.01 & -20 & 48 & 0.71 \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{0.3em}
+\begin{minipage}{\textwidth}
+\small
+\textbf{Notes:}
+\begin{itemize}[leftmargin=*, itemsep=0pt, parsep=0pt]
+    \item \textbf{NET Return}: Annual return after real transaction costs (stock TC + inter-basket TC).
+    \item \textbf{Real TC}: Actual transaction costs incurred (56-89 bps/year), including both stock-level rebalancing (June only) and inter-basket switching costs (monthly), computed using Frazzini et al. (2018) schedule.
+    \item \textbf{Panel A (vs Market)}: Break-even analysis vs NYSE P20 benchmark (14.71\% Ann. Return, consistent with Table 1).
+    \item \textbf{Panel B (vs 50/50)}: Break-even analysis vs 50/50 Buy\&Hold Offensive/Defensive benchmark, computed net using its own turnover-based TC model (annual June rebalance).
+    \item \textbf{Headroom}: Additional TC (bps/year) that would eliminate excess return vs benchmark. Negative headroom indicates underperformance.
+    \item \textbf{Total TC @ BE}: max(0, Real TC + Headroom) — maximum sustainable TC level before strategy loses its edge.
+    \item \textbf{TC Mult.}: Total TC @ BE / Real TC (how many times current TC can be sustained).
+    \item When Real TC + Headroom $\leq$ 0, Total TC @ BE is set to 0 and TC Mult. to 0.00 (strategy already underperforms the benchmark net of current costs).
+    \item TC Multiplier $>1$ indicates robustness; $=0$ indicates the strategy does not beat the benchmark.
+\end{itemize}
+\end{minipage}
+\end{table}

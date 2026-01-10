@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{Subperiod Performance of Full-Sample Selected ML Strategies vs.\ 50/50 Benchmark (FF6)}
+\label{tab:subperiod_best_ml}
+\small
+\renewcommand{\arraystretch}{1.2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c r l c r l c r l}
+\toprule
+\textbf{Basket} & \textbf{Model} & \multicolumn{3}{c}{\textbf{P1: 1980--1999}} & \multicolumn{3}{c}{\textbf{P2: 2000--2009}} & \multicolumn{3}{c}{\textbf{P3: 2010--2024}} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-11}
+ & & Sharpe & $\Delta\alpha$ &  & Sharpe & $\Delta\alpha$ &  & Sharpe & $\Delta\alpha$ &  \\
+\midrule
+Economic & XGB & 0.90 & 0.63 &     & 0.61 & -0.35 &     & 0.74 & -0.31 &     \\
+Beta Exp. & LSTM-Roll & 0.94 & 1.12 & * & 0.67 & -0.27 &     & 0.80 & 0.58 &     \\
+Rolling $\beta$ & LSTM-Roll & 0.94 & 1.73 & ** & 0.70 & 0.10 &     & 0.77 & 0.33 &     \\
+EWMA $\beta$ & LSTM-Roll & 0.93 & 1.31 & * & 0.71 & 0.23 &     & 0.75 & -0.26 &     \\
+Kalman $\beta$ & LSTM-Roll & 0.93 & 1.36 & ** & 0.70 & 0.26 &     & 0.76 & -0.07 &     \\
+\bottomrule
+\end{tabular}%
+}
+\caption*{\footnotesize \textit{Notes:} The set of strategies (Basket, Model) is selected once using the full sample (July 1980--June 2024) based on maximum net Sharpe ratio, and then evaluated out-of-sample within each subperiod without re-optimization. $\Delta\alpha$ denotes the incremental alpha (in \% per annum) of the ML strategy relative to the 50/50 benchmark (50\% Buy\&Hold Offensive + 50\% Buy\&Hold Defensive) under the Fama--French 6-factor (FF6) model. Subperiods are: P1 (1980--1999), P2 (2000--2009), P3 (2010--2024). $t$-statistics use Newey--West HAC standard errors (12 lags) on monthly data. Significance: *** $p<0.01$, ** $p<0.05$, * $p<0.10$.}
+\end{table}

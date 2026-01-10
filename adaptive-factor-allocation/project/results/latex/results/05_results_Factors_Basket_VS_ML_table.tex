@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+\centering
+\caption{Risk-Adjusted Performance of Buy\&Hold and ML Strategies}
+\label{tab:alpha_summary}
+\small
+\renewcommand{\arraystretch}{1.25}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l r l r r r l r r}
+\toprule
+\textbf{Basket} & \textbf{Strategy} & \multicolumn{4}{c}{\textbf{FF6}} & \multicolumn{4}{c}{\textbf{Q5}} \\
+\cmidrule(lr){3-6} \cmidrule(lr){7-10}
+ & & $\alpha$ (\%) & & $t$ & $R^2$ & $\alpha$ (\%) & & $t$ & $R^2$ \\
+\midrule
+\multicolumn{10}{l}{\textbf{Panel A: Buy\&Hold Baskets (Net)}} \\
+Economic & (Offensive) & 1.26 &  & 0.96 & 0.939 & 2.11 &  & 1.31 & 0.904 \\
+ & (Defensive) & 2.14 & * & 1.68 & 0.954 & 2.22 &  & 1.36 & 0.936 \\
+Beta Exp. & (Offensive) & 2.82 & * & 1.94 & 0.951 & 3.00 &  & 1.59 & 0.934 \\
+ & (Defensive) & 1.28 &  & 1.17 & 0.945 & 1.80 &  & 1.22 & 0.911 \\
+Rolling $\beta$ & (Offensive) & 2.91 & * & 1.80 & 0.945 & 3.25 &  & 1.57 & 0.929 \\
+ & (Defensive) & 1.08 &  & 1.03 & 0.939 & 1.37 &  & 0.96 & 0.903 \\
+EWMA $\beta$ & (Offensive) & 2.62 & * & 1.70 & 0.945 & 2.98 &  & 1.51 & 0.932 \\
+ & (Defensive) & 1.33 &  & 1.19 & 0.937 & 1.64 &  & 1.12 & 0.900 \\
+Kalman $\beta$ & (Offensive) & 2.78 & * & 1.84 & 0.945 & 3.03 &  & 1.56 & 0.931 \\
+ & (Defensive) & 1.08 &  & 0.96 & 0.938 & 1.49 &  & 0.99 & 0.901 \\
+\midrule
+\multicolumn{10}{l}{\textbf{Panel B: Best ML Strategies by Basket (Net)}} \\
+Economic & XGB & 1.73 &  & 1.31 & 0.941 & 2.14 &  & 1.32 & 0.908 \\
+Beta Exp. & RF & 2.77 & * & 1.94 & 0.948 & 2.77 &  & 1.49 & 0.932 \\
+Rolling $\beta$ & RF & 3.14 & ** & 2.02 & 0.940 & 2.99 &  & 1.49 & 0.926 \\
+EWMA $\beta$ & RF & 2.80 & * & 1.83 & 0.938 & 2.58 &  & 1.31 & 0.927 \\
+Kalman $\beta$ & RF & 2.82 & * & 1.91 & 0.940 & 2.59 &  & 1.35 & 0.927 \\
+\bottomrule
+\end{tabular}%
+}
+\caption*{\footnotesize \textit{Notes:} This table reports risk-adjusted performance metrics for buy-and-hold baskets (Panel A) and the best-performing ML strategy per basket (Panel B). All returns are net of transaction costs. Alphas ($\alpha$) are annualized and expressed in percentage points. $t$-statistics use Newey-West HAC standard errors with 12 lags. $R^2$ measures the explanatory power of the factor models. FF6 includes market, size, value, profitability, investment, and momentum factors. Q5 includes market, size, investment, profitability, and expected growth factors. Sample period: July 1980--June 2024. Significance levels: *** $p<0.01$, ** $p<0.05$, * $p<0.10$.}
+\end{table}

@@ -1,0 +1,43 @@
+\begin{table}[htbp]
+\centering
+\caption{Incremental Alpha: ML vs Buy\&Hold 50/50 Benchmark}
+\label{tab:incremental_alpha_5050}
+\small
+\renewcommand{\arraystretch}{1.25}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l r l r r l r}
+\toprule
+\textbf{Basket} & \textbf{Best Model} & \multicolumn{3}{c}{\textbf{FF6}} & \multicolumn{3}{c}{\textbf{Q5}} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8}
+ & & $\Delta\alpha$ (\%) & & $t$ & $\Delta\alpha$ (\%) & & $t$ \\
+\midrule
+Economic & XGB & 0.03 &  & 0.12 & -0.03 &  & -0.10 \\
+Beta Exp. & RF & 0.72 &  & 1.58 & 0.37 &  & 0.71 \\
+Rolling $\beta$ & RF & 1.14 & * & 1.92 & 0.68 &  & 0.90 \\
+EWMA $\beta$ & RF & 0.82 &  & 1.43 & 0.27 &  & 0.38 \\
+Kalman $\beta$ & RF & 0.89 &  & 1.61 & 0.33 &  & 0.46 \\
+\midrule
+\textit{Average (all models)} & -- & 0.24 & & 0.35 & -0.19 & & -0.28 \\
+\textit{Median (all models)} & -- & 0.21 & & 0.30 & -0.22 & & -0.46 \\
+\bottomrule
+\end{tabular}%
+}
+
+\vspace{0.4cm}
+\small
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l c c c}
+\toprule
+\multicolumn{4}{l}{\textbf{Robustness: Alternative Benchmarks (FF6 only)}} \\
+\midrule
+\textbf{Benchmark} & \textbf{Mean $\Delta\alpha$ (\%)} & \textbf{\% $\Delta\alpha>0$ (FF6)} & \textbf{\# Significant (FF6)} \\
+\midrule
+50/50 (main) & 0.24 & 64\% & 0/25 \\
+Offensive only & -0.31 & 28\% & 0/25 \\
+Defensive only & 0.79 & 80\% & 1/25 \\
+\bottomrule
+\end{tabular}%
+}
+\caption*{\footnotesize \textit{Notes:} This table reports incremental alphas ($\Delta\alpha$, annualized in \% p.a.) from regressing the difference between ML strategy returns and a 50/50 benchmark (50\% Buy\&Hold Offensive + 50\% Defensive) on Fama--French 6-factor (FF6) and Hou--Xue--Zhang $q$-factor (Q5) models. The 50/50 benchmark is ex-ante neutral and not informed by future performance. The main panel shows the best-performing ML model per basket (identified based on net Sharpe ratio in the performance analysis). Summary rows report mean and median $\Delta\alpha$ across all 25 ML strategies (5 baskets $\times$ 5 models). The robustness panel compares results across three alternative benchmarks using FF6 only: the main 50/50 benchmark, Offensive-only, and Defensive-only portfolios. \# Significant = number of strategies with $|t|>1.96$ (5\% level, non-FDR-adjusted). All returns are net of transaction costs. $t$-statistics use Newey-West HAC standard errors (12 lags) on monthly data. Sample: July 1980--June 2024. Significance: *** $p<0.01$, ** $p<0.05$, * $p<0.10$.}
+\end{table}

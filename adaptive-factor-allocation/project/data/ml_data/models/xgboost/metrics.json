@@ -1,0 +1,51 @@
+{
+  "model_name": "XGBoost Classifier (Walk-Forward)",
+  "model_type": "Gradient Boosting (Tree-based)",
+  "target": "Y_EWMA_BINARY",
+  "hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "gamma": 0.1,
+    "min_child_weight": 3,
+    "scale_pos_weight": "dynamic (recomputed annually)"
+  },
+  "backtesting_protocol": {
+    "method": "Walk-Forward Expanding Window",
+    "first_formation": "1980-06-30",
+    "last_formation": "2023-06-30",
+    "total_formations": 44,
+    "refit_frequency": "Annual (June)"
+  },
+  "performance": {
+    "overall": {
+      "accuracy": 0.6590909090909091,
+      "precision": 0.5384615384615384,
+      "recall": 0.4375,
+      "f1": 0.4827586206896552,
+      "roc_auc": 0.7321428571428571
+    },
+    "yearly_mean": 0.6590909090909091,
+    "yearly_median": 1.0,
+    "yearly_std": 0.4794949774542017,
+    "extended": {
+      "balanced_accuracy": 0.6116071428571428,
+      "auc": 0.7321428571428571,
+      "f1_macro": 0.614260666277031,
+      "brier_score": 0.22555121329878103,
+      "log_loss": 0.7139528073515348,
+      "n_obs": 44
+    }
+  },
+  "class_distribution": {
+    "actual_regime_0": 28,
+    "actual_regime_1": 16,
+    "predicted_regime_0": 31,
+    "predicted_regime_1": 13
+  },
+  "training_date": "2025-12-29T04:30:45.982724"
+}
