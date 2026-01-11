@@ -2,6 +2,16 @@
 
 ### Finance
 
+
+---
+
+#### Adaptive Factor Allocation via Machine Learning Regime Detection (2026)
+
+> **Focus**: Implementation of machine learning classifiers for regime-based dynamic allocation across offensive and defensive equity factor portfolios, with strict out-of-sample evaluation and transaction cost analysis.  
+> **Keywords**: Machine Learning • Regime Detection • Factor Investing • Asset Allocation • Volatility Regimes • Transaction Costs  
+> **License**: Apache 2.0 *(note: main repository under MIT)*
+
+
 ---
 
 #### Reassessing Accounting Anomalies in an Investable U.S. Equity Universe (2025)
