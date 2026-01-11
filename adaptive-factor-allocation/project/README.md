@@ -353,27 +353,7 @@ The next phase moves from static research verification to an **Interactive Alpha
 7.  **Automated Factor Interpretation**: Auto-regressive testing of new factor models (e.g., Q5, Fama-French 6) with automated interpretation of alpha.
 8.  **Custom Stress Testing**: User-defined regime overrides (e.g., "Force High Volatility").
 
----
 
-## 📚 Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@misc{bakari_2026_adaptive,
-  title  = {Adaptive Factor Allocation via Machine Learning Regime Detection},
-  author = {Jeylani Bakari, Abdul Kadir},
-  year   = {2026},
-  school = {HEC Université de Lausanne},
-  note   = {GitHub Repository}
-}
-```
-
----
-
-## 🎓 Acknowledgments
-
-Special thanks to **Ms Maria-Pia Lombardo**, **Ms Anna Smirnova**, **Prof. Simon Scheidegger**, and **Prof. Amit Goyal** (HEC Université de Lausanne).
 
 ---
 
@@ -381,12 +361,3 @@ Special thanks to **Ms Maria-Pia Lombardo**, **Ms Anna Smirnova**, **Prof. Simon
 
 For any questions or issues regarding this codebase, please **[contact the author](mailto:abdul.jeylanibakari@gmail.com)**.
 
----
-
-## ⚖️ Legal & Financial Disclaimer
-
-**HYPOTHETICAL PERFORMANCE RESULTS HAVE MANY INHERENT LIMITATIONS, SOME OF WHICH ARE DESCRIBED BELOW. NO REPRESENTATION IS BEING MADE THAT ANY ACCOUNT WILL OR IS LIKELY TO ACHIEVE PROFITS OR LOSSES SIMILAR TO THOSE SHOWN. IN FACT, THERE ARE FREQUENTLY SHARP DIFFERENCES BETWEEN HYPOTHETICAL PERFORMANCE RESULTS AND THE ACTUAL RESULTS SUBSEQUENTLY ACHIEVED BY ANY PARTICULAR TRADING PROGRAM.**
-
-ONE OF THE LIMITATIONS OF HYPOTHETICAL PERFORMANCE RESULTS IS THAT THEY ARE GENERALLY PREPARED WITH THE BENEFIT OF HINDSIGHT. IN ADDITION, HYPOTHETICAL TRADING DOES NOT INVOLVE FINANCIAL RISK, AND NO HYPOTHETICAL TRADING RECORD CAN COMPLETELY ACCOUNT FOR THE IMPACT OF FINANCIAL RISK IN ACTUAL TRADING. FOR EXAMPLE, THE ABILITY TO WITHSTAND LOSSES OR TO ADHERE TO A PARTICULAR TRADING PROGRAM IN SPITE OF TRADING LOSSES ARE MATERIAL POINTS WHICH CAN ALSO ADVERSELY AFFECT ACTUAL TRADING RESULTS. THERE ARE NUMEROUS OTHER FACTORS RELATED TO THE MARKETS IN GENERAL OR TO THE IMPLEMENTATION OF ANY SPECIFIC TRADING PROGRAM WHICH CANNOT BE FULLY ACCOUNTED FOR IN THE PREPARATION OF HYPOTHETICAL PERFORMANCE RESULTS AND ALL OF WHICH CAN ADVERSELY AFFECT ACTUAL TRADING RESULTS.
-
-**Educational Purpose**: This code is provided solely for academic context and educational purposes. It is not financial advice.
