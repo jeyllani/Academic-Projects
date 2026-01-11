@@ -1,5 +1,3 @@
-# 🏗️ Research Pipeline Technical Documentation
-
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Research_Active-success.svg)](https://github.com/)
@@ -29,7 +27,21 @@ This document provides detailed technical documentation for **replicating all re
 
 This project requires **Python 3.10+** and is optimized for **macOS (Apple Silicon)** using Metal acceleration for TensorFlow.
 
-### Option A: Conda (Recommended)
+
+## ⚙️ Installation & Environment
+
+This project requires **Python 3.10+** and is optimized for **macOS (Apple Silicon)** using Metal acceleration for TensorFlow.
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/jeyllani/Projects/adaptive-factor-allocation.git
+cd adaptive-factor-allocation/project
+```
+
+### 2. Install Requirements
+
+#### Option A: Conda (Recommended)
 
 The most robust way to replicate the environment is via Conda:
 
@@ -44,7 +56,7 @@ conda activate afactors
 python -m ipykernel install --user --name=afactors --display-name "Python (Adaptive Factors)"
 ```
 
-### Option B: Pip / Venv
+#### Option B: Pip / Venv
 
 If you prefer standard Python virtual environments:
 

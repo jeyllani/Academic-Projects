@@ -67,7 +67,7 @@ adaptive-factor-allocation/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/adaptive-factor-allocation.git
+git clone https://github.com/jeyllani/Projects/adaptive-factor-allocation.git
 cd adaptive-factor-allocation
 ```
 
