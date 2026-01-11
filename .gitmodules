@@ -1,0 +1,3 @@
+[submodule "adaptive-factor-allocation"]
+	path = adaptive-factor-allocation
+	url = https://github.com/jeyllani/adaptive-factor-allocation.git
